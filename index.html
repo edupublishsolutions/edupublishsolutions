@@ -4,339 +4,98 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>EduPublishSolutions | Research Publication Experts</title>
-
+<meta name="description" content="Professional academic journal submission support for researchers and scholars.">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
 <style>
-:root{
-  --primary:#0f4c81;
-  --secondary:#1fa2ff;
-  --accent:#ffb703;
-  --dark:#0b2545;
-}
-
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family:'Poppins',sans-serif;
-}
-
-body{
-  background:linear-gradient(180deg,#f4f8ff,#ffffff);
-  color:#333;
-}
-
-/* HERO */
-.hero{
-  min-height:100vh;
-  background:linear-gradient(120deg,#0f4c81,#1fa2ff);
-  color:#fff;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-  padding:40px 20px;
-}
-
-.hero-content{
-  max-width:900px;
-  animation:fadeUp 1s ease;
-}
-
-.hero h1{
-  font-size:52px;
-  font-weight:700;
-  margin-bottom:15px;
-}
-
-.hero h1 span{
-  color:var(--accent);
-}
-
-.hero p{
-  font-size:20px;
-  margin-bottom:30px;
-  opacity:0.95;
-}
-
-.hero-btn{
-  padding:14px 34px;
-  background:var(--accent);
-  color:#000;
-  text-decoration:none;
-  font-weight:600;
-  border-radius:30px;
-  transition:0.3s;
-}
-
-.hero-btn:hover{
-  transform:scale(1.05);
-}
-
-/* SECTION */
-section{
-  max-width:1200px;
-  margin:auto;
-  padding:80px 20px;
-}
-
-.section-title{
-  text-align:center;
-  margin-bottom:55px;
-}
-
-.section-title h2{
-  font-size:38px;
-  color:var(--dark);
-}
-
-.section-title p{
-  color:#555;
-  margin-top:10px;
-}
-
-/* GLASS CARDS */
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:30px;
-}
-
-.card{
-  background:rgba(255,255,255,0.75);
-  backdrop-filter:blur(10px);
-  padding:30px;
-  border-radius:18px;
-  box-shadow:0 20px 40px rgba(0,0,0,0.08);
-  transition:0.3s;
-}
-
-.card:hover{
-  transform:translateY(-10px);
-}
-
-.card h3{
-  color:var(--primary);
-  margin-bottom:12px;
-}
-
-.card p{
-  font-size:15px;
-}
-
-/* INDEX TAGS */
-.tags{
-  display:flex;
-  flex-wrap:wrap;
-  gap:15px;
-  justify-content:center;
-}
-
-.tag{
-  padding:14px 28px;
-  border-radius:40px;
-  background:#fff;
-  box-shadow:0 10px 25px rgba(0,0,0,0.08);
-  font-weight:600;
-  color:var(--primary);
-}
-
-/* PROCESS */
-.process-step{
-  text-align:center;
-}
-
-.step-circle{
-  width:70px;
-  height:70px;
-  background:linear-gradient(135deg,var(--primary),var(--secondary));
-  color:#fff;
-  border-radius:50%;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-size:22px;
-  font-weight:600;
-  margin:0 auto 15px;
-}
-
-/* CTA */
-.cta{
-  background:linear-gradient(120deg,#0b2545,#13315c);
-  color:#fff;
-  text-align:center;
-  padding:90px 20px;
-}
-
-.cta h2{
-  font-size:40px;
-  margin-bottom:15px;
-}
-
-.cta p{
-  margin-bottom:25px;
-  font-size:18px;
-}
-
-.cta a{
-  background:var(--accent);
-  color:#000;
-  padding:14px 36px;
-  border-radius:35px;
-  font-weight:600;
-  text-decoration:none;
-}
-
-/* CONTACT */
-.contact form{
-  max-width:650px;
-  margin:auto;
-  display:grid;
-  gap:18px;
-}
-
-.contact input,
-.contact textarea{
-  padding:14px;
-  border-radius:10px;
-  border:1px solid #ccc;
-  font-size:15px;
-}
-
-.contact button{
-  background:linear-gradient(120deg,var(--primary),var(--secondary));
-  color:#fff;
-  border:none;
-  padding:14px;
-  border-radius:30px;
-  font-size:16px;
-  cursor:pointer;
-}
-
-/* FOOTER */
-footer{
-  background:#0b2545;
-  color:#aaa;
-  text-align:center;
-  padding:20px;
-  font-size:14px;
-}
-
-@keyframes fadeUp{
-  from{opacity:0; transform:translateY(40px);}
-  to{opacity:1; transform:translateY(0);}
-}
+:root{--primary:#0f4c81;--secondary:#1fa2ff;--accent:#ffb703;--dark:#0b2545}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+body{background:linear-gradient(180deg,#f4f8ff,#ffffff);color:#333}
+header{background:#fff;box-shadow:0 4px 12px rgba(0,0,0,0.08);position:sticky;top:0;z-index:999}
+nav{max-width:1200px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:15px 20px}
+.logo{font-size:22px;font-weight:700;color:var(--primary)}
+.logo span{color:var(--accent)}
+nav a{text-decoration:none;margin-left:25px;color:#333;font-weight:500}
+.hero{min-height:90vh;background:linear-gradient(120deg,#0f4c81,#1fa2ff);color:#fff;display:flex;align-items:center;justify-content:center;text-align:center;padding:40px 20px}
+.hero h1{font-size:48px;margin-bottom:10px}
+.hero p{font-size:19px;margin-bottom:25px}
+.hero-btn{padding:14px 34px;background:var(--accent);color:#000;text-decoration:none;font-weight:600;border-radius:30px}
+section{max-width:1200px;margin:auto;padding:80px 20px}
+.section-title{text-align:center;margin-bottom:45px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:30px}
+.card{background:#fff;padding:30px;border-radius:16px;box-shadow:0 20px 40px rgba(0,0,0,0.08)}
+.card h3{color:var(--primary);margin-bottom:12px}
+.contact form{max-width:650px;margin:auto;display:grid;gap:18px}
+.contact input,.contact textarea{padding:14px;border-radius:10px;border:1px solid #ccc}
+.contact button{background:linear-gradient(120deg,var(--primary),var(--secondary));color:#fff;border:none;padding:14px;border-radius:30px}
+footer{background:#0b2545;color:#aaa;text-align:center;padding:20px;font-size:14px}
 </style>
 </head>
-
 <body>
-
-<!-- HERO -->
+<header>
+<nav>
+<div class="logo">EduPublish<span>Solutions</span></div>
+<div>
+<a href="#">Home</a>
+<a href="#about">About Us</a>
+<a href="#services">Our Services</a>
+<a href="#journals">Journals</a>
+<a href="#faq">FAQ</a>
+<a href="#contact">Contact Us</a>
+</div>
+<div style="display:flex;align-items:center;gap:15px;">
+<a href="https://instagram.com/yourusername" target="_blank">Instagram</a>
+<a href="https://facebook.com/yourusername" target="_blank">Facebook</a>
+<a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+</div>
+<div style="margin-left:20px;font-size:14px;color:#555;display:flex;gap:15px;align-items:center;">
+<span>📞 +91-XXXXXXXXXX</span>
+<span>✉ info@edupublishsolutions.com</span>
+</div>
+</nav>
+</header>
 <div class="hero">
-  <div class="hero-content">
-    <h1>EduPublish<span>Solutions</span></h1>
-    <p>Premium Journal & Research Paper Publication Support for Scholars, PhD Researchers & Academicians</p>
-    <a href="#contact" class="hero-btn">Publish Your Paper</a>
-  </div>
+<div>
+<h1>Academic Publication Support</h1>
+<p>Professional submission guidance for scholars and researchers</p>
+<a href="#contact" class="hero-btn">Get Consultation</a>
 </div>
-
-<!-- SERVICES -->
-<section>
-  <div class="section-title">
-    <h2>Our Expertise</h2>
-    <p>End-to-end publication support with ethical and transparent process</p>
-  </div>
-
-  <div class="grid">
-    <div class="card">
-      <h3>Journal Identification</h3>
-      <p>Accurate journal matching based on scope, impact factor & indexing.</p>
-    </div>
-    <div class="card">
-      <h3>Editing & Formatting</h3>
-      <p>Language polishing, plagiarism reduction & journal-ready formatting.</p>
-    </div>
-    <div class="card">
-      <h3>Submission Handling</h3>
-      <p>Complete submission and editor communication support.</p>
-    </div>
-    <div class="card">
-      <h3>Ethical Publishing</h3>
-      <p>Peer-reviewed journals only – no fake or predatory practices.</p>
-    </div>
-  </div>
-</section>
-
-<!-- INDEXING -->
-<section>
-  <div class="section-title">
-    <h2>Indexed Journals</h2>
-    <p>We assist publication in globally recognized databases</p>
-  </div>
-
-  <div class="tags">
-    <div class="tag">Scopus</div>
-    <div class="tag">Web of Science</div>
-    <div class="tag">UGC CARE</div>
-    <div class="tag">PubMed</div>
-    <div class="tag">ABDC</div>
-    <div class="tag">Google Scholar</div>
-  </div>
-</section>
-
-<!-- PROCESS -->
-<section>
-  <div class="section-title">
-    <h2>Publication Process</h2>
-  </div>
-
-  <div class="grid">
-    <div class="process-step">
-      <div class="step-circle">1</div>
-      <p>Paper Evaluation</p>
-    </div>
-    <div class="process-step">
-      <div class="step-circle">2</div>
-      <p>Editing & Review</p>
-    </div>
-    <div class="process-step">
-      <div class="step-circle">3</div>
-      <p>Submission</p>
-    </div>
-    <div class="process-step">
-      <div class="step-circle">4</div>
-      <p>Acceptance & Publication</p>
-    </div>
-  </div>
-</section>
-
-<!-- CTA -->
-<div class="cta">
-  <h2>Publish with Confidence</h2>
-  <p>Trusted by researchers across India & abroad</p>
-  <a href="#contact">Start Now</a>
 </div>
-
-<!-- CONTACT -->
+<section id="about">
+<div class="section-title"><h2>About Us</h2></div>
+<p style="text-align:center;max-width:900px;margin:auto;font-size:17px;line-height:1.7">
+EduPublishSolutions provides ethical academic publishing assistance to students, PhD scholars and faculty members. We support manuscript preparation, journal selection and submission guidance while maintaining transparency and research integrity standards.
+</p>
+</section>
+<section id="services">
+<div class="section-title"><h2>Our Services</h2></div>
+<div class="grid">
+<div class="card"><h3>Journal Selection</h3><p>Identify suitable journals based on scope and indexing.</p></div>
+<div class="card"><h3>Editing & Formatting</h3><p>Language editing and journal template formatting.</p></div>
+<div class="card"><h3>Plagiarism Check</h3><p>Similarity analysis and improvement suggestions.</p></div>
+<div class="card"><h3>Submission Support</h3><p>Guidance during submission and revision process.</p></div>
+<div class="card"><h3>Writing Service</h3><p>Professional assistance in drafting research papers and academic manuscripts.</p></div>
+<div class="card"><h3>Thesis Writing</h3><p>Structured support for thesis development, formatting and review.</p></div>
+<div class="card"><h3>Book Publication Support</h3><p>Complete support for academic book and chapter publication process.</p></div>
+<div class="card"><h3>Conference Proceeding & Certificate Support</h3><p>Assistance with conference paper submission and certificate documentation.</p></div>
+<div class="card"><h3>OSP Services</h3><p>Online submission portal handling and documentation assistance.</p></div>
+<div class="card"><h3>Patent Publication Services</h3><p>Guidance for drafting and publishing technical and academic patents.</p></div>
+</div>
+</section>
 <section class="contact" id="contact">
-  <div class="section-title">
-    <h2>Contact EduPublishSolutions</h2>
-    <p>Get a free consultation for your paper</p>
-  </div>
-
-  <form>
-    <input type="text" placeholder="Your Name" required>
-    <input type="email" placeholder="Email Address" required>
-    <input type="text" placeholder="Target Indexing (Scopus / WoS / UGC CARE)">
-    <textarea rows="4" placeholder="Brief about your research paper"></textarea>
-    <button type="submit">Submit Inquiry</button>
-  </form>
+<div class="section-title"><h2>Contact Us</h2></div>
+<form>
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Email Address" required>
+<textarea rows="4" placeholder="Your Message"></textarea>
+<button type="submit">Send Inquiry</button>
+</form>
 </section>
+<footer>© 2026 EduPublishSolutions</footer>
 
-<footer>
-  © 2026 EduPublishSolutions | Research & Journal Publication Experts
-</footer>
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/91XXXXXXXXXX" target="_blank" style="position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;padding:14px 20px;border-radius:50px;text-decoration:none;font-weight:600;box-shadow:0 10px 20px rgba(0,0,0,0.25);z-index:9999;">
+Chat on WhatsApp
+</a>
 
 </body>
 </html>
