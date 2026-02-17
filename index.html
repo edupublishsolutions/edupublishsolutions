@@ -10,7 +10,7 @@
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;scroll-behavior:smooth;}
-body{background:#f4f7fb;color:#333;padding-top:90px;}
+body{background:#f4f7fb;color:#333;padding-top:95px;}
 
 /* HEADER */
 header{
@@ -24,7 +24,6 @@ position:fixed;
 top:0;
 width:100%;
 z-index:1000;
-gap:15px;
 flex-wrap:wrap;
 }
 
@@ -35,15 +34,19 @@ flex-wrap:wrap;
 nav a{
 color:white;
 text-decoration:none;
-margin:0 10px;
+margin:0 8px;
 font-weight:500;
+font-size:14px;
 transition:0.3s;
 }
 nav a:hover{color:#fbc531;}
 
-.header-contact{font-size:13px;text-align:right;line-height:1.4}
+.header-contact{font-size:13px;text-align:right;}
 
-/* HERO */
+/* SECTIONS */
+section{padding:80px 8%;}
+.section-title{text-align:center;margin-bottom:40px;font-size:32px;color:#0a3d62;}
+
 .hero{
 height:100vh;
 background:linear-gradient(rgba(10,61,98,0.85),rgba(10,61,98,0.85)),
@@ -54,7 +57,6 @@ justify-content:center;
 align-items:center;
 text-align:center;
 color:white;
-padding:20px;
 }
 .hero h2{font-size:46px;margin-bottom:20px;}
 .hero p{font-size:18px;margin-bottom:25px;}
@@ -67,26 +69,13 @@ border:none;
 border-radius:30px;
 text-decoration:none;
 font-weight:600;
-transition:0.3s;
 }
 .btn:hover{background:#fff;}
 
-section{padding:90px 8%;}
-.section-title{text-align:center;margin-bottom:40px;font-size:32px;color:#0a3d62;}
-
-.services,.blogs{
+.grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
 gap:25px;
-}
-
-.category-title{
-grid-column:1/-1;
-font-size:22px;
-color:#0a3d62;
-margin-top:25px;
-margin-bottom:-10px;
-font-weight:600;
 }
 
 .card{
@@ -95,8 +84,18 @@ padding:25px;
 border-radius:10px;
 box-shadow:0 5px 20px rgba(0,0,0,0.1);
 transition:0.3s;
+text-align:center;
 }
 .card:hover{transform:translateY(-10px);}
+
+/* BLOG IMAGE STYLE */
+.blog-card{padding:0;overflow:hidden;text-align:left;}
+.blog-card img{
+width:100%;
+height:180px;
+object-fit:cover;
+}
+.blog-content{padding:20px;}
 
 /* CONTACT */
 .contact form{
@@ -121,11 +120,10 @@ text-align:center;
 padding:30px;
 }
 .social-icons a{
-color:white;margin:0 10px;font-size:20px;transition:0.3s;
+color:white;margin:0 10px;font-size:20px;
 }
 .social-icons a:hover{color:#fbc531;}
 
-/* WhatsApp */
 .whatsapp-float{
 position:fixed;
 bottom:20px;
@@ -136,7 +134,6 @@ font-size:28px;
 padding:15px;
 border-radius:50%;
 box-shadow:0 5px 15px rgba(0,0,0,0.3);
-z-index:1000;
 text-decoration:none;
 }
 .whatsapp-float:hover{background:#128C7E;}
@@ -152,7 +149,6 @@ box-shadow:0 5px 20px rgba(0,0,0,0.1);
 
 <body>
 
-<!-- HEADER -->
 <header>
 <div class="logo-area">
 <img src="logo.png" alt="logo">
@@ -162,6 +158,8 @@ box-shadow:0 5px 20px rgba(0,0,0,0.1);
 <nav>
 <a href="#home">Home</a>
 <a href="#services">Services</a>
+<a href="#journals">Journals</a>
+<a href="#indexing">Indexing Partners</a>
 <a href="#blogs">Blogs</a>
 <a href="#refund">Refund Policy</a>
 <a href="#contact">Contact</a>
@@ -183,20 +181,41 @@ box-shadow:0 5px 20px rgba(0,0,0,0.1);
 <!-- SERVICES -->
 <section id="services">
 <h2 class="section-title">Our Services</h2>
-<div class="services" id="serviceContainer"></div>
+<div class="grid" id="serviceContainer"></div>
+</section>
+
+<!-- JOURNALS -->
+<section id="journals">
+<h2 class="section-title">Supported Journals</h2>
+<div class="grid">
+<div class="card"><h3>Scopus Indexed Journals</h3><p>High impact international journals indexed in Scopus.</p></div>
+<div class="card"><h3>Web of Science Journals</h3><p>SCI, SCIE & ESCI indexed journals.</p></div>
+<div class="card"><h3>UGC CARE Journals</h3><p>UGC approved journals for academic promotions.</p></div>
+</div>
+</section>
+
+<!-- INDEXING PARTNERS -->
+<section id="indexing">
+<h2 class="section-title">Our Indexing Partners</h2>
+<div class="grid">
+<div class="card"><h3>Scopus</h3><p>Global citation database.</p></div>
+<div class="card"><h3>Web of Science</h3><p>Trusted research indexing platform.</p></div>
+<div class="card"><h3>UGC CARE</h3><p>Approved academic journal list.</p></div>
+<div class="card"><h3>Google Scholar</h3><p>Widely recognized indexing service.</p></div>
+</div>
 </section>
 
 <!-- BLOGS -->
 <section id="blogs">
 <h2 class="section-title">Latest Blogs</h2>
-<div class="blogs" id="blogContainer"></div>
+<div class="grid" id="blogContainer"></div>
 </section>
 
 <!-- REFUND POLICY -->
 <section id="refund">
 <h2 class="section-title">Refund Policy</h2>
 <div class="policy-box">
-<p>EduPublishSolutions maintains a transparent refund policy. Refunds are applicable only before journal submission. Once manuscript submission is completed, service charges are non-refundable. Any exceptional case will be reviewed by management.</p>
+<p>Refunds are applicable only before journal submission. Once manuscript submission is completed, service charges are non-refundable.</p>
 </div>
 </section>
 
@@ -211,7 +230,6 @@ box-shadow:0 5px 20px rgba(0,0,0,0.1);
 </form>
 </section>
 
-<!-- FOOTER -->
 <footer>
 <p>© 2026 EduPublishSolutions | All Rights Reserved</p>
 <div class="social-icons">
@@ -229,61 +247,59 @@ box-shadow:0 5px 20px rgba(0,0,0,0.1);
 
 <script>
 
-/* Categorized Services */
+/* SERVICES */
 const services=[
-{
-category:"Journal Support",
-items:[
-{title:"Journal Selection",desc:"Guidance for selecting Scopus, Web of Science & UGC indexed journals."},
-{title:"Publication Assistance",desc:"Complete submission support till publication."}
-]},
-{
-category:"Editing Services",
-items:[
-{title:"Manuscript Formatting",desc:"Professional formatting as per journal guidelines."},
-{title:"Language Editing",desc:"Advanced grammar and language correction by experts."}
-]},
-{
-category:"Technical Services",
-items:[
-{title:"Plagiarism Check",desc:"Turnitin report with detailed analysis."},
-{title:"Reference Formatting",desc:"Citation formatting in APA, MLA, IEEE, etc."}
-]}
+{title:"Journal Selection",desc:"Guidance for selecting Scopus & WoS journals."},
+{title:"Publication Assistance",desc:"Complete submission support till publication."},
+{title:"Manuscript Formatting",desc:"Formatting as per journal guidelines."},
+{title:"Plagiarism Check",desc:"Turnitin similarity report."}
 ];
 
 const serviceContainer=document.getElementById("serviceContainer");
 
-services.forEach(section=>{
-const title=document.createElement("div");
-title.className="category-title";
-title.innerText=section.category;
-serviceContainer.appendChild(title);
-
-section.items.forEach(service=>{
+services.forEach(service=>{
 const div=document.createElement("div");
 div.classList.add("card");
 div.innerHTML=`<h3>${service.title}</h3><p>${service.desc}</p>`;
 serviceContainer.appendChild(div);
 });
-});
 
-/* Blogs */
+/* BLOGS WITH IMAGES */
 const blogs=[
-{title:"How to Publish in Scopus Journal?",desc:"Step-by-step guide for successful publication."},
-{title:"Avoid Plagiarism in Research Papers",desc:"Tips to reduce similarity index."},
-{title:"UGC Care Journal Explained",desc:"Everything you need to know about UGC journals."}
+{
+title:"How to Publish in Scopus Journal?",
+desc:"Step-by-step guide for successful publication in international journals.",
+img:"https://images.unsplash.com/photo-1456324504439-367cee3b3c32"
+},
+{
+title:"Avoid Plagiarism in Research Papers",
+desc:"Smart techniques to reduce similarity index and pass Turnitin.",
+img:"https://images.unsplash.com/photo-1454165804606-c3d57bc86b40"
+},
+{
+title:"UGC CARE Journal Explained",
+desc:"Understand approved journals and academic promotion requirements.",
+img:"https://images.unsplash.com/photo-1513258496099-48168024aec0"
+}
 ];
 
 const blogContainer=document.getElementById("blogContainer");
 
 blogs.forEach(blog=>{
 const div=document.createElement("div");
-div.classList.add("card");
-div.innerHTML=`<h3>${blog.title}</h3><p>${blog.desc}</p>`;
+div.classList.add("card","blog-card");
+
+div.innerHTML=`
+<img src="${blog.img}" alt="blog image">
+<div class="blog-content">
+<h3>${blog.title}</h3>
+<p>${blog.desc}</p>
+</div>
+`;
+
 blogContainer.appendChild(div);
 });
 
-/* Contact Form */
 function submitForm(e){
 e.preventDefault();
 alert("Thank you! We will contact you soon.");
