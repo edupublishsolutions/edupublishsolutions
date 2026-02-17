@@ -5,269 +5,244 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>EduPublishSolutions | Research Publication Experts</title>
 
-<meta name="description" content="Professional academic journal submission support for researchers and scholars.">
-<meta name="keywords" content="research publication help, scopus journal assistance, thesis writing support, plagiarism check service, ugc care journal help">
-<meta name="author" content="EduPublishSolutions">
-
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-<link rel="icon" type="image/png" href="logo.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
-:root{--primary:#0f4c81;--secondary:#1fa2ff;--accent:#ffb703;--dark:#0b2545}
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
-body{background:linear-gradient(180deg,#f4f8ff,#ffffff);color:#333}
-
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;scroll-behavior:smooth;}
+body{background:#f4f7fb;color:#333;}
 header{
-background:#fff;
-box-shadow:0 4px 12px rgba(0,0,0,0.08);
-position:sticky;
-top:0;
-z-index:999;
-}
-
-nav{
-max-width:1200px;
-margin:auto;
+background:#0a3d62;
+padding:15px 8%;
 display:flex;
-align-items:center;
 justify-content:space-between;
-padding:15px 20px;
-flex-wrap:wrap;
+align-items:center;
+color:white;
+position:fixed;
+width:100%;
+z-index:1000;
 }
-
+.logo{font-size:22px;font-weight:600;}
 nav a{
+color:white;
 text-decoration:none;
-color:#333;
-font-weight:600;
-font-size:18px;
+margin-left:20px;
+font-weight:500;
 transition:0.3s;
 }
-
-nav a:hover{
-color:var(--secondary);
-}
+nav a:hover{color:#fbc531;}
 
 .hero{
-min-height:90vh;
-background:linear-gradient(120deg,#0f4c81,#1fa2ff);
-color:#fff;
+height:100vh;
+background:linear-gradient(rgba(10,61,98,0.8),rgba(10,61,98,0.8)),
+url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f') no-repeat center/cover;
 display:flex;
-align-items:center;
+flex-direction:column;
 justify-content:center;
+align-items:center;
 text-align:center;
-padding:40px 20px;
+color:white;
+padding:20px;
 }
-
-.hero h1{font-size:48px;margin-bottom:10px}
-.hero p{font-size:19px;margin-bottom:25px}
-.hero-btn{
-padding:14px 34px;
-background:var(--accent);
+.hero h2{font-size:48px;margin-bottom:20px;}
+.hero p{font-size:18px;margin-bottom:25px;}
+.btn{
+background:#fbc531;
 color:#000;
+padding:12px 30px;
+border:none;
+border-radius:30px;
 text-decoration:none;
 font-weight:600;
-border-radius:30px;
+transition:0.3s;
 }
+.btn:hover{background:#fff;}
 
-section{max-width:1200px;margin:auto;padding:80px 20px}
-.section-title{text-align:center;margin-bottom:45px}
-.grid{
+section{padding:90px 8%;}
+.section-title{text-align:center;margin-bottom:50px;font-size:32px;color:#0a3d62;}
+
+.services, .blogs{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:30px
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
 }
 
 .card{
-background:#fff;
-padding:30px;
-border-radius:16px;
-box-shadow:0 20px 40px rgba(0,0,0,0.08)
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+transition:0.3s;
 }
-
-.card h3{
-color:var(--primary);
-margin-bottom:12px
-}
+.card:hover{transform:translateY(-10px);}
 
 .contact form{
-max-width:650px;
+max-width:600px;
 margin:auto;
-display:grid;
-gap:18px
+display:flex;
+flex-direction:column;
+gap:15px;
 }
-
 .contact input,.contact textarea{
-padding:14px;
-border-radius:10px;
-border:1px solid #ccc
+padding:12px;border-radius:5px;border:1px solid #ccc;
 }
-
 .contact button{
-background:linear-gradient(120deg,var(--primary),var(--secondary));
-color:#fff;
-border:none;
-padding:14px;
-border-radius:30px;
-cursor:pointer
+background:#0a3d62;color:white;padding:12px;border:none;cursor:pointer;
 }
 
 footer{
-background:#0b2545;
-color:#aaa;
+background:#0a3d62;
+color:white;
 text-align:center;
-padding:20px;
-font-size:14px
+padding:30px;
+}
+.social-icons a{
+color:white;
+margin:0 10px;
+font-size:20px;
+transition:0.3s;
+}
+.social-icons a:hover{color:#fbc531;}
+
+/* WhatsApp Floating */
+.whatsapp-float{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+font-size:28px;
+padding:15px;
+border-radius:50%;
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
+z-index:1000;
+text-decoration:none;
+}
+.whatsapp-float:hover{background:#128C7E;}
+
+/* Refund Policy */
+.policy-box{
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
 }
 
-@media(max-width:768px){
-.hero h1{font-size:34px}
-.hero p{font-size:16px}
-nav{flex-direction:column;gap:15px}
-}
 </style>
 </head>
 
 <body>
 
 <header>
+<div class="logo">EduPublishSolutions</div>
 <nav>
-
-<!-- Logo -->
-<div>
-<img src="logo.png" alt="EduPublishSolutions Logo" style="height:75px;">
-</div>
-
-<!-- Menu -->
-<div style="display:flex;gap:30px;">
-<a href="#">Home</a>
-<a href="#about">About Us</a>
+<a href="#home">Home</a>
 <a href="#services">Services</a>
-<a href="#journals">Journals</a>
-<a href="#faq">FAQ</a>
+<a href="#blogs">Blogs</a>
+<a href="#refund">Refund Policy</a>
 <a href="#contact">Contact</a>
-</div>
-
-<!-- Contact & Social -->
-<div style="display:flex;flex-direction:column;align-items:flex-end;font-size:14px;gap:6px;">
-
-<div>
-📞 <a href="tel:8709815038">8709815038</a>
-</div>
-
-<div>
-✉ <a href="mailto:edupublishsolutions@gmail.com">
-edupublishsolutions@gmail.com
-</a>
-</div>
-
-<div style="display:flex;gap:15px;margin-top:5px;">
-<a href="https://www.instagram.com/edupublishsolutions/" target="_blank">
-Instagram
-</a>
-
-<a href="https://www.linkedin.com/in/edupublish-solutions-0653433b1/" target="_blank">
-LinkedIn
-</a>
-</div>
-
-</div>
-
 </nav>
 </header>
 
-<div class="hero">
-<div>
-<h1>Top-Rated Research Paper Publication Support in India for Scopus & Indexed Journals</h1>
-<p>At Edu Publish Solutions, We empower researchers to transform their ideas into credible publications through ethical guidance, expert support, and quality-focused processes. Our mission is to simplify the academic publishing journey, strengthen research impact, and help scholars publish with confidence, clarity, and integrity.</p>
-<a href="#contact" class="hero-btn">Get Consultation</a>
-</div>
-</div>
-
-<section id="about">
-<div class="section-title"><h2>About Us</h2></div>
-<p style="text-align:center;max-width:900px;margin:auto;font-size:17px;line-height:1.7">
-Edu Publish Solutions provides comprehensive support across every stage of the research and academic publication cycle, with a strong focus on ethical standards, manuscript quality, and publication readiness. We offer structured guidance in research paper development, manuscript and thesis writing assistance, editing and proofreading, plagiarism checking and reduction, conference paper publication support, and journal selection aligned with the research scope. Our services also include pre-submission peer review, acceptance letter process guidance, DOI activation support, book publication assistance, and patent publication documentation support. Through these services, we help scholars meet academic requirements, minimize the risk of rejection, and publish confidently in reputable indexing platforms such as Scopus, Web of Science, Science Citation Index (SCI/SCIE), UGC-CARE, PubMed, and Directory of Open Access Journals (DOAJ). We remain committed to integrity, transparency, and adherence to global academic publishing standards.
-</p>
+<!-- HERO -->
+<section class="hero" id="home">
+<h2>Professional Research Publication Support</h2>
+<p>We provide publication support in various indexed journals.</p>
+<a href="#contact" class="btn">Get Consultation</a>
 </section>
 
+<!-- SERVICES -->
 <section id="services">
-<div class="section-title"><h2>Our Services</h2></div>
-<div class="grid">
-<div class="card"><h3>Complete Research Publishing Support</h3><p>Complete research publishing support is a structured, step-by-step process that guides researchers from journal selection to final publication. The process begins with identifying suitable peer-reviewed and indexed journals aligned with the study’s scope, methodology, and impact goals. It includes detailed manuscript preparation, formatting according to journal guidelines, plagiarism screening, language editing, reference verification, and technical compliance checks. Before submission, a pre-submission review is conducted to strengthen clarity, research design, statistical accuracy, and overall presentation.
+<h2 class="section-title">Our Services</h2>
+<div class="services" id="serviceContainer"></div>
+</section>
 
-After submission, the process continues with editorial communication support, response-to-reviewer guidance, revision management, and resubmission assistance to improve acceptance outcomes. Upon acceptance, final proof corrections, copyright documentation, and DOI verification are completed to ensure accurate indexing in reputed databases such as Scopus, Web of Science, UGC-CARE, and Directory of Open Access Journals. This comprehensive approach enhances publication readiness, reduces the risk of rejection, and ensures compliance with international academic publishing standards.</p></div>
-<div class="card"><h3>Writing Services</h3><p>Edu Publish Solutions provides professional academic writing and research publication support for students, PhD scholars, and faculty members across diverse disciplines. Our services include research paper writing, review article development, case report preparation, thesis and dissertation writing assistance, and book chapter drafting tailored to university and journal guidelines. We focus on originality, structured research methodology, proper citation formatting (APA, MLA, Chicago, Vancouver), plagiarism compliance, and publication-ready manuscript development. Through quality-driven and ethically guided processes, we help researchers strengthen their academic work and enhance their chances of successful journal publication in reputed indexed platforms.</p></div>
-<div class="card"><h3>Plagiarism Check</h3><p>Edu Publish Solutions provides professional plagiarism checking services to ensure research originality and compliance with university and journal standards. Our plagiarism screening process includes generating a detailed similarity report, identifying overlapping content, verifying proper citations, and suggesting ethical revisions to reduce similarity percentages. We follow recognized academic guidelines to help researchers maintain integrity, avoid rejection, and meet submission requirements for reputed indexed journals and institutions.</p></div>
-<div class="card"><h3>Book Publication and Distribution</h3><p>Edu Publish Solutions publishes books on major e-commerce platforms and also provides printed hard copies for authors and institutions. Our service includes preparation of print-ready and digital formats, ISBN registration assistance, and distribution setup to make the book accessible to a wider audience. Authors receive professionally produced copies suitable for academic submission, personal distribution, and library records, ensuring both online availability and physical publication for maximum reach and credibility.</p></div>
-<div class="card"><h3>Conference Paper Publication</h3><p>Edu Publish Solutions (EPS) provides professional conference paper publication support for students, researchers, and faculty members seeking to present and publish their work in national and international conferences. Our services include conference selection guidance, manuscript formatting as per conference templates, plagiarism checking, technical editing, and complete submission assistance. We also support authors in preparing camera-ready papers, responding to reviewer comments, and completing registration and documentation processes.
+<!-- BLOGS -->
+<section id="blogs">
+<h2 class="section-title">Latest Blogs</h2>
+<div class="blogs" id="blogContainer"></div>
+</section>
 
-Our structured approach helps researchers improve acceptance rates and publish their conference papers in proceedings indexed in reputed databases such as Scopus and Web of Science. We focus on maintaining academic integrity, quality standards, and compliance with conference publication guidelines to ensure successful and credible research dissemination.</p></div>
-<div class="card"><h3>Patent Publication Services</h3><p>Edu Publish Solutions (EPS) provides patent publication support for researchers, innovators, startups, and academicians seeking to protect and formally document their inventions. Our services include prior-art search guidance, drafting support for patent specifications, preparation of drawings and claims structure, documentation formatting, and assistance throughout the filing and publication process. We also guide applicants in understanding technical disclosure requirements and maintaining compliance with official procedures.
-
-The structured process helps applicants present their innovation clearly, improve documentation accuracy, and complete patent publication efficiently while meeting national and international intellectual property standards.</p></div>
+<!-- REFUND POLICY -->
+<section id="refund">
+<h2 class="section-title">Refund Policy</h2>
+<div class="policy-box">
+<p>EduPublishSolutions maintains a transparent refund policy. Refunds are applicable only before journal submission. Once manuscript submission is completed, service charges are non-refundable. Any exceptional case will be reviewed by management.</p>
 </div>
 </section>
 
-<section id="journals">
-<div class="section-title"><h2>Journal Categories We Support</h2></div>
-<div class="grid">
-<div class="card"><h3>Scopus Indexed Journals</h3></div>
-<div class="card"><h3>Web of Science Journals</h3></div>
-<div class="card"><h3>UGC CARE Journals</h3></div>
-<div class="card"><h3>International Peer-Reviewed Journals</h3></div>
-</div>
-</section>
-
-<section id="faq">
-<div class="section-title"><h2>Frequently Asked Questions</h2></div>
-
-<div class="card">
-<h3>What services does EduPublishSolutions offer?</h3>
-<p>We provide a wide range of services including research article writing, review article writing, plagiarism reduction, paraphrasing, thesis writing, editing, and comprehensive journal publication and Book Publication support.</p>
-</div>
-
-<div class="card">
-<h3>Is my research confidential?</h3>
-<p>Yes. We follow strict confidentiality and ethical policies.</p>
-</div>
-
-<div class="card">
-<h3>How do you ensure originality?</h3>
-<p>All documents undergo rigorous plagiarism checks using industry-standard tools. We also perform paraphrasing when needed to ensure full originality and compliance with ethical standards.</p>
-</div>
-
-</section>
-
+<!-- CONTACT -->
 <section class="contact" id="contact">
-<div class="section-title"><h2>Contact Us</h2></div>
-
-<form action="https://formsubmit.co/edupublishsolutions@gmail.com" method="POST">
-<input type="hidden" name="_captcha" value="false">
-<input type="hidden" name="_subject" value="New Website Inquiry">
-
-<input type="text" name="name" placeholder="Your Name" required>
-<input type="email" name="email" placeholder="Email Address" required>
-<textarea name="message" rows="4" placeholder="Your Message"></textarea>
-
-<button type="submit">Send Inquiry</button>
+<h2 class="section-title">Contact Us</h2>
+<form onsubmit="submitForm(event)">
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Your Email" required>
+<textarea rows="5" placeholder="Your Message"></textarea>
+<button type="submit">Send Message</button>
 </form>
-
 </section>
 
+<!-- FOOTER -->
 <footer>
-<p>© 2026 EduPublishSolutions</p>
-<p style="font-size:12px;margin-top:8px;">
-We provide academic guidance and editing support only. We do not guarantee publication or sell authorship.
-</p>
+<p>© 2026 EduPublishSolutions | All Rights Reserved</p>
+
+<div class="social-icons">
+<a href="#"><i class="fab fa-linkedin"></i></a>
+<a href="#"><i class="fab fa-instagram"></i></a>
+<a href="#"><i class="fab fa-facebook"></i></a>
+<a href="https://wa.me/918904287768"><i class="fab fa-whatsapp"></i></a>
+</div>
+
+<p>Email: edupublishsolutions@gmail.com | Call: 8904287768</p>
 </footer>
 
 <!-- WhatsApp Floating Button -->
-<a href="https://wa.me/918709815038?text=Hello%20I%20need%20help%20with%20research%20publication"
-target="_blank"
-style="position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;padding:14px 20px;border-radius:50px;text-decoration:none;font-weight:600;box-shadow:0 10px 20px rgba(0,0,0,0.25);z-index:9999;">
-Chat on WhatsApp
+<a href="https://wa.me/918904287768" class="whatsapp-float" target="_blank">
+<i class="fab fa-whatsapp"></i>
 </a>
+
+<script>
+
+/* Dynamic Services */
+const services = [
+{title:"Journal Selection",desc:"Guidance for selecting Scopus, Web of Science & UGC indexed journals."},
+{title:"Manuscript Formatting",desc:"Professional formatting as per journal guidelines."},
+{title:"Plagiarism Check",desc:"Turnitin report with detailed analysis."},
+{title:"Publication Assistance",desc:"Complete submission support till publication."}
+];
+
+const serviceContainer=document.getElementById("serviceContainer");
+
+services.forEach(service=>{
+const div=document.createElement("div");
+div.classList.add("card");
+div.innerHTML=<h3>${service.title}</h3><p>${service.desc}</p>;
+serviceContainer.appendChild(div);
+});
+
+/* Dynamic Blogs */
+const blogs=[
+{title:"How to Publish in Scopus Journal?",desc:"Step-by-step guide for successful publication."},
+{title:"Avoid Plagiarism in Research Papers",desc:"Tips to reduce similarity index."},
+{title:"UGC Care Journal Explained",desc:"Everything you need to know about UGC journals."}
+];
+
+const blogContainer=document.getElementById("blogContainer");
+
+blogs.forEach(blog=>{
+const div=document.createElement("div");
+div.classList.add("card");
+div.innerHTML=<h3>${blog.title}</h3><p>${blog.desc}</p>;
+blogContainer.appendChild(div);
+});
+
+/* Contact Form */
+function submitForm(e){
+e.preventDefault();
+alert("Thank you! We will contact you soon.");
+}
+
+</script>
 
 </body>
 </html>
