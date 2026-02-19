@@ -69,6 +69,8 @@ footer{background:#0a3d62;color:white;text-align:center;padding:30px;}
 <a href="#journals">Journals</a>
 <a href="#indexing">Indexing Partners</a>
 <a href="#blogs">Blogs</a>
+<a href="#vision">Vision</a>
+<a href="#benefits">Benefits</a>
 <a href="#refund">Refund Policy</a>
 <a href="#contact">Contact</a>
 </nav>
@@ -86,25 +88,17 @@ footer{background:#0a3d62;color:white;text-align:center;padding:30px;}
 <section id="journals"><h2 class="section-title">Supported Journals</h2><div class="grid"><div class="card"><h3>Scopus Indexed Journals</h3><p>High impact international journals indexed in Scopus.</p></div><div class="card"><h3>Web of Science Journals</h3><p>SCI, SCIE & ESCI indexed journals.</p></div><div class="card"><h3>UGC CARE Journals</h3><p>UGC approved journals for academic promotions.</p></div></div></section>
 <section id="indexing"><h2 class="section-title">Our Indexing Partners</h2><div class="grid"><div class="card"><img class="partner-logo" src="https://upload.wikimedia.org/wikipedia/commons/0/06/Scopus_logo.svg"><h3>Scopus</h3></div><div class="card"><img class="partner-logo" src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Web_of_Science_logo.png"><h3>Web of Science</h3></div><div class="card"><img class="partner-logo" src="https://upload.wikimedia.org/wikipedia/commons/4/4d/UGC_India_Logo.png"><h3>UGC CARE</h3></div><div class="card"><img class="partner-logo" src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Google_Scholar_logo.svg"><h3>Google Scholar</h3></div><div class="card"><img class="partner-logo" src="https://upload.wikimedia.org/wikipedia/commons/3/32/PubMed_logo.png"><h3>PubMed</h3></div><div class="card"><img class="partner-logo" src="https://upload.wikimedia.org/wikipedia/commons/7/79/ABDC_logo.png"><h3>ABDC</h3></div><div class="card"><img class="partner-logo" src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Elsevier_logo.svg"><h3>Embase Database</h3></div><div class="card"><img class="partner-logo" src="https://upload.wikimedia.org/wikipedia/commons/2/2b/MSME_India_logo.png"><h3>MSME Registered</h3></div></div></section>
 <section id="blogs"><h2 class="section-title">Latest Blogs</h2><div class="grid" id="blogContainer"></div></section>
+<section id="vision"><h2 class="section-title">Our Vision</h2><div class="policy-box"><p>To support researchers worldwide by improving the quality, clarity, and readiness of academic manuscripts through ethical guidance and transparent processes — helping authors confidently navigate the publication journey.</p></div></section>
+<section id="benefits"><h2 class="section-title">Why Researchers Trust Us</h2><div class="grid"><div class="card"><h3>Client-Oriented</h3><p>Guidance tailored to subject area, goals, and journal requirements.</p></div><div class="card"><h3>Independent</h3><p>Objective recommendations without affiliation to specific journals.</p></div><div class="card"><h3>Competent</h3><p>Follows academic writing standards and formatting best practices.</p></div><div class="card"><h3>Results-Driven</h3><p>Focus on improving manuscript readiness and reviewer readability.</p></div><div class="card"><h3>Problem-Solving</h3><p>Helps address formatting issues and reviewer comments effectively.</p></div><div class="card"><h3>Transparent</h3><p>Clear communication with no misleading promises; authors keep full control.</p></div></div></section>
 <section id="refund"><h2 class="section-title">Refund Policy</h2><div class="policy-box"><p>Refunds are applicable only before journal submission. Once manuscript submission is completed, service charges are non-refundable.</p></div></section>
 <section class="contact" id="contact"><h2 class="section-title">Contact Us</h2><form onsubmit="submitForm(event)"><input type="text" placeholder="Your Name" required><input type="email" placeholder="Your Email" required><textarea rows="5" placeholder="Your Message"></textarea><button type="submit">Send Message</button></form><p style="text-align:center;margin-top:30px;font-size:18px;">📍 EduPublishSolutions, New Delhi – 110094, India</p></section>
 <footer><p>© 2026 EduPublishSolutions | All Rights Reserved</p><div class="social-icons"><a href="#"><i class="fab fa-linkedin"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-facebook"></i></a><a href="https://wa.me/918904287768"><i class="fab fa-whatsapp"></i></a></div><p>Email: edupublishsolutions@gmail.com | Call: 8904287768</p></footer>
 <a href="https://wa.me/918904287768" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
 <script>
-const services=[
-{title:"Journal Selection",desc:"Selecting an appropriate journal is a critical step in the publication process."},
-{title:"Publication Assistance",desc:"End-to-end support including editing, formatting and submission guidance."},
-{title:"Manuscript Formatting",desc:"Formatting as per journal guidelines."},
-{title:"Plagiarism Check",desc:"Turnitin similarity report."}
-];
+const services=[{title:"Journal Selection",desc:"Selecting an appropriate journal is a critical step in the publication process."},{title:"Publication Assistance",desc:"End-to-end support including editing, formatting and submission guidance."},{title:"Manuscript Formatting",desc:"Formatting as per journal guidelines."},{title:"Plagiarism Check",desc:"Turnitin similarity report."}];
 const serviceContainer=document.getElementById("serviceContainer");
 services.forEach(service=>{const div=document.createElement("div");div.classList.add("card");div.innerHTML=`<h3>${service.title}</h3><p>${service.desc}</p>`;serviceContainer.appendChild(div);});
-
-const blogs=[
-{title:"How to Publish in Scopus Journal?",desc:"Step-by-step guide for successful publication.",img:"https://images.unsplash.com/photo-1456324504439-367cee3b3c32"},
-{title:"Avoid Plagiarism in Research Papers",desc:"Smart techniques to reduce similarity index.",img:"https://images.unsplash.com/photo-1454165804606-c3d57bc86b40"},
-{title:"UGC CARE Journal Explained",desc:"Understand approved journals requirements.",img:"https://images.unsplash.com/photo-1513258496099-48168024aec0"}
-];
+const blogs=[{title:"How to Publish in Scopus Journal?",desc:"Step-by-step guide for successful publication.",img:"https://images.unsplash.com/photo-1456324504439-367cee3b3c32"},{title:"Avoid Plagiarism in Research Papers",desc:"Smart techniques to reduce similarity index.",img:"https://images.unsplash.com/photo-1454165804606-c3d57bc86b40"},{title:"UGC CARE Journal Explained",desc:"Understand approved journals requirements.",img:"https://images.unsplash.com/photo-1513258496099-48168024aec0"}];
 const blogContainer=document.getElementById("blogContainer");
 blogs.forEach(blog=>{const div=document.createElement("div");div.classList.add("card","blog-card");div.innerHTML=`<img src="${blog.img}"><div class="blog-content"><h3>${blog.title}</h3><p>${blog.desc}</p></div>`;blogContainer.appendChild(div);});
 function submitForm(e){e.preventDefault();alert("Thank you! We will contact you soon.");}
