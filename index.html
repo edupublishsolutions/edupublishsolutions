@@ -20,13 +20,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;scroll-behavior:smooth;}
 body{background:#f4f7fb;color:#333;padding-top:95px;}
-header{background:#0a3d62;padding:12px 8%;display:flex;justify-content:space-between;align-items:center;color:white;position:fixed;top:0;width:100%;z-index:1000;flex-wrap:wrap;}
+header{background:#0a3d62;padding:12px 8%;display:flex;justify-content:space-between;align-items:center;color:white;position:fixed;top:0;width:100%;z-index:1000;flex-wrap:nowrap;}
 .logo-area{display:flex;align-items:center;gap:10px;}
 .logo-area img{height:45px;}
 .logo{font-size:22px;font-weight:600;}
 nav a{color:white;text-decoration:none;margin:0 8px;font-weight:500;font-size:14px;transition:0.3s;}
 nav a:hover{color:#fbc531;}
-.header-contact{font-size:13px;text-align:right;}
+.header-contact{font-size:13px;text-align:right;margin-left:auto;white-space:nowrap;}
 section{padding:80px 8%;}
 .section-title{text-align:center;margin-bottom:40px;font-size:32px;color:#0a3d62;}
 .hero{height:100vh;background:linear-gradient(rgba(10,61,98,0.85),rgba(10,61,98,0.85)),url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f') no-repeat center/cover;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;color:white;}
@@ -50,8 +50,8 @@ footer{background:#0a3d62;color:white;text-align:center;padding:30px;}
 .whatsapp-float{position:fixed;bottom:20px;right:20px;background:#25D366;color:white;font-size:28px;padding:15px;border-radius:50%;box-shadow:0 5px 15px rgba(0,0,0,0.3);text-decoration:none;}
 .whatsapp-float:hover{background:#128C7E;}
 .policy-box{background:white;padding:30px;border-radius:10px;box-shadow:0 5px 20px rgba(0,0,0,0.1);} 
-.announcement{width:100%;background:#0b3d91;color:#fff;overflow:hidden;white-space:nowrap;box-sizing:border-box}
-.announcement span{display:inline-block;padding-left:100%;animation:scrollText 18s linear infinite;font-weight:600;letter-spacing:.5px}
+.announcement{width:100%;background:#0b3d91;color:#fff;overflow:hidden;white-space:nowrap;box-sizing:border-box;height:40px;display:flex;align-items:center;font-size:14px;}
+.announcement span{display:inline-block;padding-left:100%;animation:scrollText 25s linear infinite;font-weight:600;letter-spacing:.5px;} .announcement:hover span{animation-play-state:paused;}
 @keyframes scrollText{0%{transform:translateX(0)}100%{transform:translateX(-100%)}}
 </style>
 </head>
