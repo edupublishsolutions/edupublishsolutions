@@ -2,38 +2,19 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- SEO Meta Title -->
+<title>Scopus, Web of Science & UGC CARE Journal Publication Support | EduPublishSolutions India</title>
+
+<!-- SEO Meta Description -->
+<meta name="description" content="EduPublishSolutions provides professional research publication support in Scopus, Web of Science & UGC CARE indexed journals. Journal selection, manuscript formatting, plagiarism check and fast acceptance guidance in India.">
 
 <!-- Google Search Console Verification -->
 <meta name="google-site-verification" content="XjJ5Mac8n3XnJ3EWmrar6wuEefxkt6Sy91WreS__HfI" />
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Scopus, Web of Science & UGC CARE Journal Publication Support | EduPublishSolutions India</title>
-
-<meta name="description" content="EduPublishSolutions offers professional research publication support in Scopus, Web of Science & UGC CARE indexed journals. Journal selection, manuscript formatting, plagiarism check & fast acceptance guidance in India.">
-
-<meta name="keywords" content="Scopus journal publication, UGC CARE journal support, Web of Science publication, research paper assistance India, plagiarism check service">
-
-<meta name="author" content="EduPublishSolutions">
-
-<!-- Open Graph -->
-<meta property="og:title" content="Professional Research Publication Support | EduPublishSolutions">
-<meta property="og:description" content="End-to-end publication assistance for Scopus, Web of Science & UGC indexed journals.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://yourgithubusername.github.io/">
-<meta property="og:image" content="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f">
-
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-<style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;scroll-behavior:smooth;}
-body{background:#f4f7fb;color:#333;padding-top:120px;}
-
-/* Announcement */
-.announcement{position:fixed;top:0;width:100%;background:#0b3d91;color:#fff;overflow:hidden;white-space:nowrap;z-index:2000}
-.announcement span{display:inline-block;padding:8px 0 8px 100%;animation:scrollText 18s linear infinite;font-weight:600;}
-@keyframes scrollText{0%{transform:translateX(0)}100%{transform:translateX(-100%)}}
 
 /* HEADER */
 header{
@@ -44,68 +25,137 @@ justify-content:space-between;
 align-items:center;
 color:white;
 position:fixed;
-top:36px;
+top:0;
 width:100%;
 z-index:1000;
 flex-wrap:wrap;
 }
+
 .logo-area{display:flex;align-items:center;gap:10px;}
 .logo-area img{height:45px;}
 .logo{font-size:22px;font-weight:600;}
-nav a{color:white;text-decoration:none;margin:0 8px;font-weight:500;font-size:14px;}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:0 8px;
+font-weight:500;
+font-size:14px;
+transition:0.3s;
+}
 nav a:hover{color:#fbc531;}
+
 .header-contact{font-size:13px;text-align:right;}
 
+/* SECTIONS */
 section{padding:80px 8%;}
 .section-title{text-align:center;margin-bottom:40px;font-size:32px;color:#0a3d62;}
 
 .hero{
-min-height:100vh;
+height:100vh;
 background:linear-gradient(rgba(10,61,98,0.85),rgba(10,61,98,0.85)),
-url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f') center/cover;
-display:flex;flex-direction:column;justify-content:center;align-items:center;
-text-align:center;color:white;padding:20px;
+url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f') no-repeat center/cover;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
 }
-.hero h2{font-size:42px;margin-bottom:20px;}
-.hero p{font-size:18px;margin-bottom:25px;max-width:700px;}
+.hero h2{font-size:46px;margin-bottom:20px;}
+.hero p{font-size:18px;margin-bottom:25px;}
 
-.btn{background:#fbc531;color:#000;padding:12px 30px;border-radius:30px;text-decoration:none;font-weight:600;}
+.btn{
+background:#fbc531;
+color:#000;
+padding:12px 30px;
+border:none;
+border-radius:30px;
+text-decoration:none;
+font-weight:600;
+}
 .btn:hover{background:#fff;}
 
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:25px;}
-.card{background:white;padding:25px;border-radius:10px;box-shadow:0 5px 20px rgba(0,0,0,0.1);transition:.3s;text-align:center;}
-.card:hover{transform:translateY(-8px);}
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+transition:0.3s;
+text-align:center;
+}
+.card:hover{transform:translateY(-10px);}
+
+/* partner logos */
 .partner-logo{width:120px;height:80px;object-fit:contain;margin-bottom:10px;}
 
+/* BLOG IMAGE STYLE */
 .blog-card{padding:0;overflow:hidden;text-align:left;}
 .blog-card img{width:100%;height:180px;object-fit:cover;}
 .blog-content{padding:20px;}
 
-.contact form{max-width:600px;margin:auto;display:flex;flex-direction:column;gap:15px;}
-.contact input,.contact textarea{padding:12px;border-radius:5px;border:1px solid #ccc;}
-.contact button{background:#0a3d62;color:white;padding:12px;border:none;cursor:pointer;}
+/* CONTACT */
+.contact form{
+max-width:600px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+.contact input,.contact textarea{
+padding:12px;border-radius:5px;border:1px solid #ccc;
+}
+.contact button{
+background:#0a3d62;color:white;padding:12px;border:none;cursor:pointer;
+}
 
-footer{background:#0a3d62;color:white;text-align:center;padding:30px;}
-.social-icons a{color:white;margin:0 10px;font-size:20px;}
+/* FOOTER */
+footer{
+background:#0a3d62;
+color:white;
+text-align:center;
+padding:30px;
+}
+.social-icons a{
+color:white;margin:0 10px;font-size:20px;
+}
 .social-icons a:hover{color:#fbc531;}
 
-.whatsapp-float{position:fixed;bottom:20px;right:20px;background:#25D366;color:white;font-size:28px;padding:15px;border-radius:50%;text-decoration:none;}
+.whatsapp-float{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+font-size:28px;
+padding:15px;
+border-radius:50%;
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
+text-decoration:none;
+}
 .whatsapp-float:hover{background:#128C7E;}
 
-.policy-box{background:white;padding:30px;border-radius:10px;box-shadow:0 5px 20px rgba(0,0,0,0.1);}
-
-@media(max-width:768px){
-body{padding-top:150px;}
-.hero h2{font-size:26px;}
-nav{display:flex;flex-wrap:wrap;justify-content:center;margin-top:10px;}
-.header-contact{text-align:center;margin-top:10px;}
+.policy-box{
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
 }
+/* Moving announcement bar */
+.announcement{width:100%;background:#0b3d91;color:#fff;overflow:hidden;white-space:nowrap;box-sizing:border-box}
+.announcement span{display:inline-block;padding-left:100%;animation:scrollText 18s linear infinite;font-weight:600;letter-spacing:.5px}
+@keyframes scrollText{0%{transform:translateX(0)}100%{transform:translateX(-100%)}}
 </style>
 </head>
 
-<body>
-
-<div class="announcement"><span>Edu Publish Solution — Professional Research Publication Support & Fast Acceptance Guidance</span></div>
+$0
+<div class="announcement"><span>Edu Publish Solution — 100% Publication guaranteed with fast Acceptance letter provider</span></div>
 
 <header>
 <div class="logo-area">
@@ -159,6 +209,11 @@ nav{display:flex;flex-wrap:wrap;justify-content:center;margin-top:10px;}
 <div class="card"><img class="partner-logo" src="https://upload.wikimedia.org/wikipedia/commons/0/06/Scopus_logo.svg"><h3>Scopus</h3></div>
 <div class="card"><img class="partner-logo" src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Web_of_Science_logo.png"><h3>Web of Science</h3></div>
 <div class="card"><img class="partner-logo" src="https://upload.wikimedia.org/wikipedia/commons/4/4d/UGC_India_Logo.png"><h3>UGC CARE</h3></div>
+<div class="card"><img class="partner-logo" src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Google_Scholar_logo.svg"><h3>Google Scholar</h3></div>
+<div class="card"><img class="partner-logo" src="https://upload.wikimedia.org/wikipedia/commons/3/32/PubMed_logo.png"><h3>PubMed</h3></div>
+<div class="card"><img class="partner-logo" src="https://upload.wikimedia.org/wikipedia/commons/7/79/ABDC_logo.png"><h3>ABDC</h3></div>
+<div class="card"><img class="partner-logo" src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Elsevier_logo.svg"><h3>Embase Database</h3></div>
+<div class="card"><img class="partner-logo" src="https://upload.wikimedia.org/wikipedia/commons/2/2b/MSME_India_logo.png"><h3>MSME Registered</h3></div>
 </div>
 </section>
 
@@ -185,7 +240,10 @@ nav{display:flex;flex-wrap:wrap;justify-content:center;margin-top:10px;}
 <textarea rows="5" placeholder="Your Message"></textarea>
 <button type="submit">Send Message</button>
 </form>
-<p style="text-align:center;margin-top:30px;font-size:18px;">📍 EduPublishSolutions, New Delhi – 110094, India</p>
+
+<p style="text-align:center;margin-top:30px;font-size:18px;">
+📍 EduPublishSolutions, New Delhi – 110094, India
+</p>
 </section>
 
 <footer>
@@ -204,30 +262,35 @@ nav{display:flex;flex-wrap:wrap;justify-content:center;margin-top:10px;}
 </a>
 
 <script>
+/* SERVICES */
 const services=[
-{title:"Journal Selection",desc:"Expert guidance in selecting suitable indexed journals."},
-{title:"Publication Assistance",desc:"Complete research paper submission support."},
+{title:"Journal Selection",desc:"Selecting an appropriate journal is a critical step in the publication process, as it determines the visibility and academic impact of a manuscript. Authors should target high-impact journals indexed in reputable databases, align their paper with the journal’s aims and scope, and review similar published work to identify realistic submission options. Verifying indexing through official sources such as Scopus and the Web of Science Master Journal List, along with evaluating metrics like CiteScore percentile and Impact Factor, helps reduce rejection risk and ensures efficient publication. Edu Publish Solutions provides professional guidance to assist researchers in choosing suitable journals and improving publication success."},
+{title:"Publication Assistance",desc:"Our Publication Assistance service offers end-to-end support for research paper publication, including manuscript editing, formatting, plagiarism checking, and submission to high-impact journals indexed in Scopus and Web of Science. With expert journal selection guidance, technical review, and submission support, Edu Publish Solutions helps researchers improve manuscript quality, meet journal requirements, and increase acceptance rates."},
 {title:"Manuscript Formatting",desc:"Formatting as per journal guidelines."},
 {title:"Plagiarism Check",desc:"Turnitin similarity report."}
 ];
 
-const blogs=[
-{title:"How to Publish in Scopus Journal?",desc:"Step-by-step guide for successful publication.",img:"https://images.unsplash.com/photo-1456324504439-367cee3b3c32"},
-{title:"Avoid Plagiarism in Research Papers",desc:"Smart techniques to reduce similarity index.",img:"https://images.unsplash.com/photo-1454165804606-c3d57bc86b40"}
-];
-
+const serviceContainer=document.getElementById("serviceContainer");
 services.forEach(service=>{
 const div=document.createElement("div");
 div.classList.add("card");
-div.innerHTML=`<h3>${service.title}</h3><p>${service.desc}</p>`;
-document.getElementById("serviceContainer").appendChild(div);
+div.innerHTML=<h3>${service.title}</h3><p>${service.desc}</p>;
+serviceContainer.appendChild(div);
 });
 
+/* BLOGS WITH IMAGES */
+const blogs=[
+{title:"How to Publish in Scopus Journal?",desc:"Step-by-step guide for successful publication in international journals.",img:"https://images.unsplash.com/photo-1456324504439-367cee3b3c32"},
+{title:"Avoid Plagiarism in Research Papers",desc:"Smart techniques to reduce similarity index and pass Turnitin.",img:"https://images.unsplash.com/photo-1454165804606-c3d57bc86b40"},
+{title:"UGC CARE Journal Explained",desc:"Understand approved journals and academic promotion requirements.",img:"https://images.unsplash.com/photo-1513258496099-48168024aec0"}
+];
+
+const blogContainer=document.getElementById("blogContainer");
 blogs.forEach(blog=>{
 const div=document.createElement("div");
 div.classList.add("card","blog-card");
-div.innerHTML=`<img src="${blog.img}"><div class="blog-content"><h3>${blog.title}</h3><p>${blog.desc}</p></div>`;
-document.getElementById("blogContainer").appendChild(div);
+div.innerHTML=<img src="${blog.img}"><div class="blog-content"><h3>${blog.title}</h3><p>${blog.desc}</p></div>;
+blogContainer.appendChild(div);
 });
 
 function submitForm(e){e.preventDefault();alert("Thank you! We will contact you soon.");}
