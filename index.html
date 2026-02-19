@@ -10,9 +10,9 @@
 
 <title>Scopus, Web of Science & UGC CARE Journal Publication Support | EduPublishSolutions India</title>
 
-<meta name="description" content="EduPublishSolutions provides expert research publication support in Scopus, Web of Science & UGC CARE indexed journals. Fast acceptance guidance, plagiarism check, manuscript formatting and journal selection assistance in India.">
+<meta name="description" content="EduPublishSolutions offers professional research publication support in Scopus, Web of Science & UGC CARE indexed journals. Journal selection, manuscript formatting, plagiarism check & fast acceptance guidance in India.">
 
-<meta name="keywords" content="Scopus journal publication, UGC CARE journal support, Web of Science publication, research paper assistance India, plagiarism check service, journal selection guidance">
+<meta name="keywords" content="Scopus journal publication, UGC CARE journal support, Web of Science publication, research paper assistance India, plagiarism check service">
 
 <meta name="author" content="EduPublishSolutions">
 
@@ -27,31 +27,38 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
-body{background:#f4f7fb;color:#333;padding-top:95px;line-height:1.6}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;scroll-behavior:smooth;}
+body{background:#f4f7fb;color:#333;padding-top:120px;}
+
+/* Announcement */
+.announcement{position:fixed;top:0;width:100%;background:#0b3d91;color:#fff;overflow:hidden;white-space:nowrap;z-index:2000}
+.announcement span{display:inline-block;padding:8px 0 8px 100%;animation:scrollText 18s linear infinite;font-weight:600;}
+@keyframes scrollText{0%{transform:translateX(0)}100%{transform:translateX(-100%)}}
 
 /* HEADER */
 header{
 background:#0a3d62;
-padding:12px 5%;
+padding:12px 8%;
 display:flex;
 justify-content:space-between;
 align-items:center;
 color:white;
 position:fixed;
-top:0;
+top:36px;
 width:100%;
 z-index:1000;
 flex-wrap:wrap;
 }
 .logo-area{display:flex;align-items:center;gap:10px;}
-.logo-area img{height:40px;}
-.logo{font-size:20px;font-weight:600;}
-nav{display:flex;flex-wrap:wrap}
-nav a{color:white;text-decoration:none;margin:5px 8px;font-weight:500;font-size:14px;}
-.header-contact{font-size:12px;text-align:right}
+.logo-area img{height:45px;}
+.logo{font-size:22px;font-weight:600;}
+nav a{color:white;text-decoration:none;margin:0 8px;font-weight:500;font-size:14px;}
+nav a:hover{color:#fbc531;}
+.header-contact{font-size:13px;text-align:right;}
 
-/* HERO */
+section{padding:80px 8%;}
+.section-title{text-align:center;margin-bottom:40px;font-size:32px;color:#0a3d62;}
+
 .hero{
 min-height:100vh;
 background:linear-gradient(rgba(10,61,98,0.85),rgba(10,61,98,0.85)),
@@ -59,49 +66,50 @@ url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f') center/cover
 display:flex;flex-direction:column;justify-content:center;align-items:center;
 text-align:center;color:white;padding:20px;
 }
-.hero h2{font-size:38px;margin-bottom:15px}
-.hero p{font-size:16px;margin-bottom:20px;max-width:650px}
-.btn{background:#fbc531;color:#000;padding:12px 25px;border-radius:30px;text-decoration:none;font-weight:600}
+.hero h2{font-size:42px;margin-bottom:20px;}
+.hero p{font-size:18px;margin-bottom:25px;max-width:700px;}
 
-/* SECTIONS */
-section{padding:60px 5%}
-.section-title{text-align:center;margin-bottom:30px;font-size:28px;color:#0a3d62}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
-.card{background:white;padding:20px;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,0.1);transition:.3s}
-.card:hover{transform:translateY(-5px)}
-.partner-logo{width:110px;height:70px;object-fit:contain;margin-bottom:10px}
+.btn{background:#fbc531;color:#000;padding:12px 30px;border-radius:30px;text-decoration:none;font-weight:600;}
+.btn:hover{background:#fff;}
 
-/* BLOG */
-.blog-card{padding:0;overflow:hidden}
-.blog-card img{width:100%;height:170px;object-fit:cover}
-.blog-content{padding:15px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:25px;}
+.card{background:white;padding:25px;border-radius:10px;box-shadow:0 5px 20px rgba(0,0,0,0.1);transition:.3s;text-align:center;}
+.card:hover{transform:translateY(-8px);}
+.partner-logo{width:120px;height:80px;object-fit:contain;margin-bottom:10px;}
 
-/* CONTACT */
-.contact form{max-width:500px;margin:auto;display:flex;flex-direction:column;gap:12px}
-.contact input,.contact textarea{padding:10px;border-radius:5px;border:1px solid #ccc}
-.contact button{background:#0a3d62;color:white;padding:10px;border:none;cursor:pointer}
+.blog-card{padding:0;overflow:hidden;text-align:left;}
+.blog-card img{width:100%;height:180px;object-fit:cover;}
+.blog-content{padding:20px;}
 
-footer{background:#0a3d62;color:white;text-align:center;padding:25px}
-.social-icons a{color:white;margin:0 8px;font-size:18px}
-.social-icons a:hover{color:#fbc531}
+.contact form{max-width:600px;margin:auto;display:flex;flex-direction:column;gap:15px;}
+.contact input,.contact textarea{padding:12px;border-radius:5px;border:1px solid #ccc;}
+.contact button{background:#0a3d62;color:white;padding:12px;border:none;cursor:pointer;}
 
-.whatsapp-float{
-position:fixed;bottom:20px;right:20px;background:#25D366;
-color:white;font-size:24px;padding:14px;border-radius:50%;text-decoration:none;
-}
+footer{background:#0a3d62;color:white;text-align:center;padding:30px;}
+.social-icons a{color:white;margin:0 10px;font-size:20px;}
+.social-icons a:hover{color:#fbc531;}
+
+.whatsapp-float{position:fixed;bottom:20px;right:20px;background:#25D366;color:white;font-size:28px;padding:15px;border-radius:50%;text-decoration:none;}
+.whatsapp-float:hover{background:#128C7E;}
+
+.policy-box{background:white;padding:30px;border-radius:10px;box-shadow:0 5px 20px rgba(0,0,0,0.1);}
 
 @media(max-width:768px){
-.hero h2{font-size:26px}
-nav{justify-content:center}
-.header-contact{text-align:center;margin-top:8px}
+body{padding-top:150px;}
+.hero h2{font-size:26px;}
+nav{display:flex;flex-wrap:wrap;justify-content:center;margin-top:10px;}
+.header-contact{text-align:center;margin-top:10px;}
 }
 </style>
 </head>
 
 <body>
 
+<div class="announcement"><span>Edu Publish Solution — Professional Research Publication Support & Fast Acceptance Guidance</span></div>
+
 <header>
 <div class="logo-area">
+<img src="logo.png" alt="logo">
 <div class="logo">EduPublishSolutions</div>
 </div>
 
@@ -109,9 +117,9 @@ nav{justify-content:center}
 <a href="#home">Home</a>
 <a href="#services">Services</a>
 <a href="#journals">Journals</a>
-<a href="#indexing">Indexing</a>
+<a href="#indexing">Indexing Partners</a>
 <a href="#blogs">Blogs</a>
-<a href="#refund">Refund</a>
+<a href="#refund">Refund Policy</a>
 <a href="#contact">Contact</a>
 </nav>
 
@@ -124,7 +132,7 @@ nav{justify-content:center}
 <!-- HERO -->
 <section class="hero" id="home">
 <h2>Professional Research Publication Support</h2>
-<p>End-to-end assistance for publishing in Scopus, Web of Science & UGC CARE indexed journals.</p>
+<p>We provide publication support in Scopus, Web of Science & UGC indexed journals.</p>
 <a href="#contact" class="btn">Get Consultation</a>
 </section>
 
@@ -138,19 +146,19 @@ nav{justify-content:center}
 <section id="journals">
 <h2 class="section-title">Supported Journals</h2>
 <div class="grid">
-<div class="card"><h3>Scopus Indexed Journals</h3></div>
-<div class="card"><h3>Web of Science Journals</h3></div>
-<div class="card"><h3>UGC CARE Journals</h3></div>
+<div class="card"><h3>Scopus Indexed Journals</h3><p>High impact international journals indexed in Scopus.</p></div>
+<div class="card"><h3>Web of Science Journals</h3><p>SCI, SCIE & ESCI indexed journals.</p></div>
+<div class="card"><h3>UGC CARE Journals</h3><p>UGC approved journals for academic promotions.</p></div>
 </div>
 </section>
 
-<!-- INDEXING -->
+<!-- INDEXING PARTNERS -->
 <section id="indexing">
 <h2 class="section-title">Our Indexing Partners</h2>
 <div class="grid">
-<div class="card"><img class="partner-logo" src="https://upload.wikimedia.org/wikipedia/commons/0/06/Scopus_logo.svg"></div>
-<div class="card"><img class="partner-logo" src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Web_of_Science_logo.png"></div>
-<div class="card"><img class="partner-logo" src="https://upload.wikimedia.org/wikipedia/commons/4/4d/UGC_India_Logo.png"></div>
+<div class="card"><img class="partner-logo" src="https://upload.wikimedia.org/wikipedia/commons/0/06/Scopus_logo.svg"><h3>Scopus</h3></div>
+<div class="card"><img class="partner-logo" src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Web_of_Science_logo.png"><h3>Web of Science</h3></div>
+<div class="card"><img class="partner-logo" src="https://upload.wikimedia.org/wikipedia/commons/4/4d/UGC_India_Logo.png"><h3>UGC CARE</h3></div>
 </div>
 </section>
 
@@ -160,16 +168,16 @@ nav{justify-content:center}
 <div class="grid" id="blogContainer"></div>
 </section>
 
-<!-- REFUND -->
+<!-- REFUND POLICY -->
 <section id="refund">
 <h2 class="section-title">Refund Policy</h2>
-<div class="card">
-Refund applicable only before journal submission. After submission, service charges are non-refundable.
+<div class="policy-box">
+<p>Refunds are applicable only before journal submission. Once manuscript submission is completed, service charges are non-refundable.</p>
 </div>
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="contact">
+<section class="contact" id="contact">
 <h2 class="section-title">Contact Us</h2>
 <form onsubmit="submitForm(event)">
 <input type="text" placeholder="Your Name" required>
@@ -177,6 +185,7 @@ Refund applicable only before journal submission. After submission, service char
 <textarea rows="5" placeholder="Your Message"></textarea>
 <button type="submit">Send Message</button>
 </form>
+<p style="text-align:center;margin-top:30px;font-size:18px;">📍 EduPublishSolutions, New Delhi – 110094, India</p>
 </section>
 
 <footer>
@@ -187,6 +196,7 @@ Refund applicable only before journal submission. After submission, service char
 <a href="#"><i class="fab fa-facebook"></i></a>
 <a href="https://wa.me/918904287768"><i class="fab fa-whatsapp"></i></a>
 </div>
+<p>Email: edupublishsolutions@gmail.com | Call: 8904287768</p>
 </footer>
 
 <a href="https://wa.me/918904287768" class="whatsapp-float" target="_blank">
@@ -195,8 +205,8 @@ Refund applicable only before journal submission. After submission, service char
 
 <script>
 const services=[
-{title:"Journal Selection",desc:"Guidance in selecting suitable indexed journals."},
-{title:"Publication Assistance",desc:"Complete research submission support."},
+{title:"Journal Selection",desc:"Expert guidance in selecting suitable indexed journals."},
+{title:"Publication Assistance",desc:"Complete research paper submission support."},
 {title:"Manuscript Formatting",desc:"Formatting as per journal guidelines."},
 {title:"Plagiarism Check",desc:"Turnitin similarity report."}
 ];
@@ -206,20 +216,18 @@ const blogs=[
 {title:"Avoid Plagiarism in Research Papers",desc:"Smart techniques to reduce similarity index.",img:"https://images.unsplash.com/photo-1454165804606-c3d57bc86b40"}
 ];
 
-const serviceContainer=document.getElementById("serviceContainer");
 services.forEach(service=>{
 const div=document.createElement("div");
 div.classList.add("card");
 div.innerHTML=`<h3>${service.title}</h3><p>${service.desc}</p>`;
-serviceContainer.appendChild(div);
+document.getElementById("serviceContainer").appendChild(div);
 });
 
-const blogContainer=document.getElementById("blogContainer");
 blogs.forEach(blog=>{
 const div=document.createElement("div");
 div.classList.add("card","blog-card");
 div.innerHTML=`<img src="${blog.img}"><div class="blog-content"><h3>${blog.title}</h3><p>${blog.desc}</p></div>`;
-blogContainer.appendChild(div);
+document.getElementById("blogContainer").appendChild(div);
 });
 
 function submitForm(e){e.preventDefault();alert("Thank you! We will contact you soon.");}
