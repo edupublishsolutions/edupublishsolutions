@@ -2,6 +2,10 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+
+<!-- Google Search Console Verification -->
+<meta name="google-site-verification" content="XjJ5Mac8n3XnJ3EWmrar6wuEefxkt6Sy91WreS__HfI" />
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Scopus & UGC Journal Publication Support | EduPublishSolutions India</title>
@@ -16,7 +20,6 @@
 <meta property="og:title" content="Research Publication Support | Scopus & UGC Journals">
 <meta property="og:description" content="Professional publication assistance for Scopus, Web of Science & UGC indexed journals.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://yourgithubusername.github.io/">
 <meta property="og:image" content="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -41,9 +44,9 @@ z-index:1000;
 flex-wrap:wrap;
 }
 
-.logo-area{display:flex;align-items:center;gap:10px;}
-.logo-area img{height:40px;}
-.logo{font-size:20px;font-weight:600;}
+.logo-area{display:flex;align-items:center;gap:10px}
+.logo-area img{height:40px}
+.logo{font-size:20px;font-weight:600}
 
 nav{display:flex;flex-wrap:wrap}
 nav a{
@@ -51,7 +54,7 @@ color:white;
 text-decoration:none;
 margin:5px 8px;
 font-weight:500;
-font-size:14px;
+font-size:14px
 }
 
 .header-contact{font-size:12px;text-align:right}
@@ -141,7 +144,6 @@ border-radius:50%;
 text-decoration:none;
 }
 
-/* MOBILE */
 @media(max-width:768px){
 .hero h2{font-size:28px}
 nav{justify-content:center}
@@ -151,3 +153,71 @@ nav{justify-content:center}
 </head>
 
 <body>
+
+<header>
+<div class="logo-area">
+<div class="logo">EduPublishSolutions</div>
+</div>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#journals">Journals</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero" id="home">
+<h2>Professional Research Publication Support</h2>
+<p>We provide publication support in Scopus, Web of Science & UGC indexed journals.</p>
+<a href="#contact" class="btn">Get Consultation</a>
+</section>
+
+<section id="services">
+<h2 class="section-title">Our Services</h2>
+<div class="grid" id="serviceContainer"></div>
+</section>
+
+<section id="contact" class="contact">
+<h2 class="section-title">Contact Us</h2>
+<form onsubmit="submitForm(event)">
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Your Email" required>
+<textarea rows="5" placeholder="Your Message"></textarea>
+<button type="submit">Send Message</button>
+</form>
+</section>
+
+<footer>
+<p>© 2026 EduPublishSolutions | All Rights Reserved</p>
+</footer>
+
+<a href="https://wa.me/918904287768" class="whatsapp-float" target="_blank">
+<i class="fab fa-whatsapp"></i>
+</a>
+
+<script>
+const services=[
+{title:"Journal Selection",desc:"Expert guidance in selecting Scopus, Web of Science and UGC CARE indexed journals."},
+{title:"Publication Assistance",desc:"Complete end-to-end research paper submission support."},
+{title:"Manuscript Formatting",desc:"Formatting as per journal guidelines."},
+{title:"Plagiarism Check",desc:"Turnitin similarity report."}
+];
+
+const serviceContainer=document.getElementById("serviceContainer");
+
+services.forEach(service=>{
+const div=document.createElement("div");
+div.classList.add("card");
+div.innerHTML=`<h3>${service.title}</h3><p>${service.desc}</p>`;
+serviceContainer.appendChild(div);
+});
+
+function submitForm(e){
+e.preventDefault();
+alert("Thank you! We will contact you soon.");
+}
+</script>
+
+</body>
+</html>
