@@ -20,8 +20,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;scroll-behavior:smooth;}
-body{background:#f4f7fb;color:#333;padding-top:95px;}
-header{background:#0a3d62;padding:12px 8%;display:flex;justify-content:space-between;align-items:center;color:white;position:fixed;top:0;width:100%;z-index:1000;}
+body{background:#f4f7fb;color:#333;padding-top:125px;} /* extra padding for announcement + header */
+header{background:#0a3d62;padding:12px 8%;display:flex;justify-content:space-between;align-items:center;color:white;position:fixed;top:40px;width:100%;z-index:1000;} /* header starts below announcement bar */
 .logo-area{display:flex;align-items:center;gap:10px;}
 .logo-area img{height:45px;}
 .logo{font-size:22px;font-weight:600;}
@@ -51,8 +51,35 @@ footer{background:#0a3d62;color:white;text-align:center;padding:30px;}
 .contact form{max-width:600px;margin:auto;display:flex;flex-direction:column;gap:15px;}
 .contact input,.contact textarea{padding:12px;border-radius:5px;border:1px solid #ccc;}
 .contact button{background:#0a3d62;color:white;padding:12px;border:none;cursor:pointer;}
-.announcement-bar{background:#fbc531;color:#000;padding:8px;text-align:center;position:fixed;top:0;width:100%;z-index:1001;}
-.announcement-track{overflow:hidden;white-space:nowrap;}
+
+/* Announcement Bar */
+.announcement-bar {
+  background: #fbc531;
+  color: #000;
+  padding: 8px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1002;
+  overflow: hidden;
+}
+
+.announcement-track {
+  display: inline-block;
+  white-space: nowrap;
+  padding-left: 100%;
+  animation: scroll 20s linear infinite;
+}
+
+.announcement-track span {
+  display: inline-block;
+  padding-right: 100%;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-100%); }
+}
 </style>
 </head>
 
@@ -63,14 +90,13 @@ footer{background:#0a3d62;color:white;text-align:center;padding:30px;}
 <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
 height="0" width="0" style="display:none;visibility:hidden"></iframe>
 </noscript>
-<!-- End Google Tag Manager (noscript) -->
 
+<!-- Announcement Bar -->
 <div class="announcement-bar">
-<div class="announcement-track">
-📢 Announcement: Now accepting manuscripts for upcoming Scopus & Web of Science indexed journals. &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;
-Fast publication support available. &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;
-Limited slots for this month.
-</div>
+  <div class="announcement-track">
+    <span>📢 Announcement: Now accepting manuscripts for upcoming Scopus & Web of Science indexed journals. &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;
+    Fast publication support available. &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; Limited slots for this month.</span>
+  </div>
 </div>
 
 <header>
