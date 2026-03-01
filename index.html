@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <!-- Google Tag Manager -->
 <script>
 (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -11,7 +10,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-XXXXXXX');
 </script>
 <!-- End Google Tag Manager -->
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>EduPublishSolutions | Research Publication Experts</title>
@@ -38,7 +36,7 @@ section{padding:80px 8%;}
 .btn:hover{background:#fff;}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:25px;}
 .card{background:white;padding:25px;border-radius:10px;box-shadow:0 5px 20px rgba(0,0,0,0.1);transition:0.3s;text-align:center;}
-.card:hover{transform:translateY(-10px);}
+.card:hover{transform:translateY(-10px);} 
 .partner-logo{width:120px;height:80px;object-fit:contain;margin-bottom:10px;}
 .blog-card{padding:0;overflow:hidden;text-align:left;}
 .blog-card img{width:100%;height:180px;object-fit:cover;}
@@ -51,26 +49,20 @@ footer{background:#0a3d62;color:white;text-align:center;padding:30px;}
 .social-icons a:hover{color:#fbc531;}
 .whatsapp-float{position:fixed;bottom:20px;right:20px;background:#25D366;color:white;font-size:28px;padding:15px;border-radius:50%;box-shadow:0 5px 15px rgba(0,0,0,0.3);text-decoration:none;}
 .whatsapp-float:hover{background:#128C7E;}
-.policy-box{background:white;padding:30px;border-radius:10px;box-shadow:0 5px 20px rgba(0,0,0,0.1);}
-.announcement{width:100%;background:#0b3d91;color:#fff;overflow:hidden;white-space:nowrap;height:40px;display:flex;align-items:center;font-size:14px;}
-.announcement span{display:inline-block;padding-left:100%;animation:scrollText 25s linear infinite;font-weight:600;letter-spacing:.5px;}
-.announcement:hover span{animation-play-state:paused;}
+.policy-box{background:white;padding:30px;border-radius:10px;box-shadow:0 5px 20px rgba(0,0,0,0.1);} 
+.announcement{width:100%;background:#0b3d91;color:#fff;overflow:hidden;white-space:nowrap;box-sizing:border-box;height:40px;display:flex;align-items:center;font-size:14px;}
+.announcement span{display:inline-block;padding-left:100%;animation:scrollText 25s linear infinite;font-weight:600;letter-spacing:.5px;} .announcement:hover span{animation-play-state:paused;}
 @keyframes scrollText{0%{transform:translateX(0)}100%{transform:translateX(-100%)}}
 </style>
 </head>
 
 <body>
-
-<div class="announcement">
-<span>Welcome to Edu Publish Solutions, where we provide professional, structured support to help researchers and academics achieve successful publication in reputable journals with precision and full compliance with academic standards</span>
-</div>
-
+<div class="announcement"><span>Welcome to Edu Publish Solutions, where we provide professional, structured support to help researchers and academics achieve successful publication in reputable journals with precision and full compliance with academic standards</span></div>
 <header>
 <div class="logo-area">
 <img src="logo.png" alt="logo">
 <div class="logo">EduPublishSolutions</div>
 </div>
-
 <nav>
 <a href="#home">Home</a>
 <a href="#services">Services</a>
@@ -82,83 +74,56 @@ footer{background:#0a3d62;color:white;text-align:center;padding:30px;}
 <a href="#refund">Refund Policy</a>
 <a href="#contact">Contact</a>
 </nav>
-
 <div class="header-contact">
-<div><i class="fa-solid fa-phone"></i> 8904287768</div>
-<div><i class="fa-solid fa-envelope"></i> edupublishsolutions@gmail.com</div>
+<div><i class="fa fa-phone"></i> 8904287768</div>
+<div><i class="fa fa-envelope"></i> edupublishsolutions@gmail.com</div>
 </div>
 </header>
-
-<!-- ALL YOUR ORIGINAL SECTIONS REMAIN UNCHANGED -->
-
-<!-- IMPORTANT FIX: Added id="contact" -->
-<section class="contact" id="contact">
-<h2>Contact Us</h2>
-
-<!-- FIXED FORM -->
-<form onsubmit="submitForm(event)">
-<input type="text" name="name" placeholder="Your Name" required>
-<input type="email" name="email" placeholder="Your Email" required>
-<input type="tel" name="contactNumber" placeholder="Your Contact Number" required>
-<input type="text" name="researchArea" placeholder="Your Research Area" required>
-<textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-<button type="submit">Send Message</button>
-</form>
-
-<p style="text-align:center;margin-top:30px;font-size:18px;">
-📍 EduPublishSolutions, Indore – 452016, India
-</p>
+<section class="hero" id="home">
+<h2>Professional and Rapid Research Publication Support</h2>
+<p>At Edu Publish Solutions, We provide comprehensive research publication support to help scholars publish in reputable, peer-reviewed journals indexed in Scopus, Web of Science, IEEE, Springer Nature, PubMed, and other recognized international databases, ensuring quality and compliance with academic standards.</p>
+<a href="#contact" class="btn">Get Consultation</a>
 </section>
+<section id="who-support"><h2 class="section-title">Who We Support</h2><div class="policy-box" style="text-align:center;"><h3>We Empower Every Researcher’s Journey</h3><p>We assist students, scholars, professors, and industry researchers across disciplines by improving clarity, structure, and submission readiness of academic manuscripts.</p></div></section>
+<section id="security"><h2 class="section-title">Assured Security and Availability</h2><div class="policy-box" style="text-align:center;"><p>Your research files remain confidential and accessible throughout the process. We follow secure handling practices and maintain communication transparency at every stage.</p></div></section>
+<section id="services"><h2 class="section-title">Our Services</h2><div class="grid" id="serviceContainer"></div></section>
+<section id="journals"><h2 class="section-title">Supported Journals & Indexing Databases</h2><div class="grid"><div class="card"><h3>Scopus Indexed Journals</h3><p>Globally recognized citation and abstract database.</p></div><div class="card"><h3>Web of Science Journals</h3><p>(SCI, SCIE, ESCI) – High-impact, rigorously reviewed journals.</p></div><div class="card"><h3>UGC CARE Journals</h3><p>UGC approved journals for academic promotions.</p></div><div class="card"><h3>PubMed</h3><p>Biomedical and life sciences database.</p></div><div class="card"><h3>IEEE Xplore</h3><p>Engineering and technology research publications.</p></div><div class="card"><h3>Springer Nature</h3><p>Journals – Internationally reputed academic publications.</p></div><div class="card"><h3>DOAJ</h3><p>Directory of high-quality open access journals.</p></div><div class="card"><h3>Google Scholar</h3><p>Broad academic indexing and citation tracking.</p></div><div class="card"><h3>Crossref</h3><p>DOI registration and scholarly metadata indexing.</p></div></div></section>
+<section id="indexing"><h2 class="section-title">Our Indexing Partners</h2><div class="grid"><div class="card"><img class="partner-logo" src="Scopus.png"><h3>Scopus</h3></div><div class="card"><img class="partner-logo" src="WoS.png"><h3>Web of Science</h3></div><div class="card"><img class="partner-logo" src="ugc.png"><h3>UGC CARE</h3></div><div class="card"><img class="partner-logo" src="google.png"><h3>Google Scholar</h3></div><div class="card"><img class="partner-logo" src="PubMed.png"><h3>PubMed</h3></div><div class="card"><img class="partner-logo" src="abdc.png"><h3>ABDC</h3></div><div class="card"><img class="partner-logo" src="Embase.png"><h3>Embase Database</h3></div><div class="card"><img class="partner-logo" src="ieee.png"><h3>IEEE Xplore</h3></div></div></section>
+<section id="subjects"><h2 class="section-title">Subject Area We Served!</h2><div class="grid"><div class="card"><h3>Engineering & Technology</h3></div><div class="card"><h3>Computer Science & AI</h3></div><div class="card"><h3>Management & Commerce</h3></div><div class="card"><h3>Medical & Life Sciences</h3></div><div class="card"><h3>Arts & Humanities</h3></div><div class="card"><h3>Social Sciences</h3></div></div></section>
+<section id="blogs"><h2 class="section-title">Latest Blogs</h2><div class="grid" id="blogContainer"></div></section>
+<section id="vision"><h2 class="section-title">Our Vision</h2><div class="policy-box"><p>To support researchers worldwide by improving the quality, clarity, and readiness of academic manuscripts through ethical guidance and transparent processes — helping authors confidently navigate the publication journey.</p></div></section>
+<section id="benefits"><h2 class="section-title">Why Researchers Trust Us</h2><div class="grid"><div class="card"><h3>Client-Oriented</h3><p>Guidance tailored to subject area, goals, and journal requirements.</p></div><div class="card"><h3>Independent</h3><p>Objective recommendations without affiliation to specific journals.</p></div><div class="card"><h3>Competent</h3><p>Follows academic writing standards and formatting best practices.</p></div><div class="card"><h3>Results-Driven</h3><p>Focus on improving manuscript readiness and reviewer readability.</p></div><div class="card"><h3>Problem-Solving</h3><p>Helps address formatting issues and reviewer comments effectively.</p></div><div class="card"><h3>Transparent</h3><p>Clear communication with no misleading promises; authors keep full control.</p></div></div></section>
+<section id="refund"><h2 class="section-title">Refund Policy</h2><div class="policy-box"><p>Refunds are applicable only before journal submission. Once manuscript submission is completed, service charges are non-refundable.</p></div></section>
+<section id="testimonials"><h2 class="section-title">What Our Client's Say</h2><div class="grid"><div class="card"><p>"Very professional guidance — my paper got accepted after revision support."</p><h4>- Research Scholar</h4></div><div class="card"><p>"Clear communication and fast formatting help. Highly recommended."</p><h4>- Assistant Professor</h4></div><div class="card"><p>"Helped reduce similarity and improve structure effectively."</p><h4>- PhD Candidate</h4></div></div></section>
 
-<footer>
-<p>© 2026 EduPublishSolutions | All Rights Reserved</p>
+    <section class="contact">
+    <h2>Contact Us</h2>
 
-<!-- FIXED SOCIAL ICONS -->
-<div class="social-icons">
-<a href="https://www.linkedin.com/in/edupublish-solutions-0653433b1/" target="_blank"><i class="fab fa-linkedin"></i></a>
-<a href="https://www.instagram.com/edupublishsolutions/" target="_blank"><i class="fab fa-instagram"></i></a>
-<a href="#"><i class="fab fa-facebook"></i></a>
-<a href="https://wa.me/918904287768" target="_blank"><i class="fab fa-whatsapp"></i></a>
-</div>
+    <form action="edupublishsolutions@gmail.com/sendmail.php" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="tel" name="contactNumber" placeholder="Your Contact Number" required>
+        <input type="text" name="researchArea" placeholder="Your Research Area" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
 
-<p>Email: edupublishsolutions@gmail.com | Call: 8904287768</p>
-</footer>
+    <p style="text-align:center;margin-top:30px;font-size:18px;">
+        📍 EduPublishSolutions, Indore – 452016, India
+    </p>
 
-<a href="https://wa.me/918904287768" class="whatsapp-float" target="_blank">
-<i class="fab fa-whatsapp"></i>
-</a>
-
-<!-- YOUR ORIGINAL SERVICES & BLOG JS KEPT EXACTLY SAME -->
+</section>
+  
+<footer><p>© 2026 EduPublishSolutions | All Rights Reserved</p><div class="social-icons"><a href="#"><i class="https://www.linkedin.com/in/edupublish-solutions-0653433b1/"></i></a><a href="#"><i class="https://www.instagram.com/edupublishsolutions/"></i></a><a href="#"><i class="fab fa-facebook"></i></a><a href="https://wa.me/918904287768"><i class="fab fa-whatsapp"></i></a></div><p>Email: edupublishsolutions@gmail.com | Call: 8904287768</p></footer>
+<a href="https://wa.me/918904287768" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
 <script>
 const services=[{title:"Journal Selection",desc:"Selecting the right journal is a critical step in the research publication process. At Edu Publish Solutions, we analyze your manuscript’s scope, quality, and research objectives to identify suitable peer-reviewed journals indexed in recognized databases, maximizing visibility, credibility, and the likelihood of successful acceptance and publication."},{title:"Writing Services",desc:"At Edu Publish Solutions, We offer professional academic writing services tailored to researchers, scholars, and institutions. Our services include research paper drafting, literature reviews, case studies, thesis support, and technical writing, ensuring clarity, originality, structured presentation, and strict adherence to international academic and journal standards."},{title:"Manuscript Formatting and Editing",desc:"At Edu Publish Solutions, We provide meticulous manuscript formatting and professional editing services to ensure your paper meets specific journal guidelines. We refine structure, language, citations, figures, and references in accordance with required styles (APA, MLA, Chicago, IEEE, etc.), enhancing clarity, consistency, and overall publication readiness."},{title:"Book Publication Services",desc:"At Edu Publish Solutions, we provide complete book publication support, including editing, formatting, cover design, ISBN assistance, and print and digital publishing. We also publish and distribute your book through leading e-commerce platforms, ensuring wider visibility, accessibility, and global reach for your work."},{title:"Conference Certificates and Conference Proceedings",desc:"At Edu Publish Solutions, we provide professional support for conference certificates and conference paper proceedings. We assist in designing and issuing authenticated certificates for participants, presenters, and organizers, as well as compiling, formatting, and publishing high-quality conference proceedings that meet academic and indexing standards."},{title:"Patent Publication Services",desc:"At Edu Publish Solutions, we provide professional assistance for patent documentation and publication support. Our services include drafting and formatting patent specifications, preparing technical descriptions and claims, ensuring compliance with patent office guidelines, and guiding you through the filing and publication process to protect and formalize your innovation effectively."},{title:"Plagiarism Check",desc:"At Edu Publish Solutions, we provide comprehensive plagiarism screening to ensure the originality and integrity of your research work. Using reliable similarity detection tools, we generate detailed reports, identify overlapping content, and offer guidance for revisions, helping you meet journal requirements and maintain the highest academic standards."},{title:"OSP Services",desc:"At Edu Publish Solutions, our OSP (Online Submission & Processing) Services provide complete assistance throughout the journal submission lifecycle. We manage manuscript submission, documentation, communication with journal editors, revision coordination, and status tracking, ensuring a smooth, timely, and professionally handled publication process."}];
-
 const serviceContainer=document.getElementById("serviceContainer");
-if(serviceContainer){
-services.forEach(service=>{
-const div=document.createElement("div");
-div.classList.add("card");
-div.innerHTML=`<h3>${service.title}</h3><p>${service.desc}</p>`;
-serviceContainer.appendChild(div);
-});
-}
-
+services.forEach(service=>{const div=document.createElement("div");div.classList.add("card");div.innerHTML=<h3>${service.title}</h3><p>${service.desc}</p>;serviceContainer.appendChild(div);});
 const blogs=[{title:"How to Publish in Scopus Journal?",desc:"Step-by-step guide for successful publication.",img:"https://images.unsplash.com/photo-1456324504439-367cee3b3c32"},{title:"Avoid Plagiarism in Research Papers",desc:"Smart techniques to reduce similarity index.",img:"https://images.unsplash.com/photo-1454165804606-c3d57bc86b40"},{title:"UGC CARE Journal Explained",desc:"Understand approved journals requirements.",img:"https://images.unsplash.com/photo-1513258496099-48168024aec0"}];
-
 const blogContainer=document.getElementById("blogContainer");
-if(blogContainer){
-blogs.forEach(blog=>{
-const div=document.createElement("div");
-div.classList.add("card","blog-card");
-div.innerHTML=`<img src="${blog.img}"><div class="blog-content"><h3>${blog.title}</h3><p>${blog.desc}</p></div>`;
-blogContainer.appendChild(div);
-});
-}
-
-function submitForm(e){
-e.preventDefault();
-alert("Thank you! We will contact you soon.");
-}
+blogs.forEach(blog=>{const div=document.createElement("div");div.classList.add("card","blog-card");div.innerHTML=<img src="${blog.img}"><div class="blog-content"><h3>${blog.title}</h3><p>${blog.desc}</p></div>;blogContainer.appendChild(div);});
+function submitForm(e){e.preventDefault();alert("Thank you! We will contact you soon.");}
 </script>
-
 </body>
 </html>
