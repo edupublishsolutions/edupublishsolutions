@@ -9,78 +9,7 @@
 
 <style>
 
-/* GRID FIX (perfect horizontal alignment) */
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:25px;
-margin-top:30px;
-align-items:stretch;
-}
-
-/* CARD FIX */
-.card{
-background:#fff;
-padding:20px;
-border-radius:12px;
-box-shadow:0 5px 20px rgba(0,0,0,0.05);
-display:flex;
-flex-direction:column;
-justify-content:space-between;
-text-align:left;
-height:100%;
-transition:0.3s;
-}
-
-.card:hover{
-transform:translateY(-5px);
-}
-
-/* IMAGE FIX (same size for all cards) */
-.card img{
-width:100%;
-height:180px;
-object-fit:cover;
-border-radius:10px;
-margin-bottom:15px;
-}
-
-/* BUTTON ALIGN SAME LINE */
-.card .btn{
-margin-top:auto;
-align-self:flex-start;
-}
-
-/* FLEX SECTION FIX */
-.flex{
-display:flex;
-align-items:center;
-gap:40px;
-flex-wrap:wrap;
-justify-content:space-between;
-}
-
-.flex img{
-width:100%;
-max-width:350px;
-height:250px;
-object-fit:cover;
-border-radius:12px;
-}
-
-/* MOBILE FIX */
-@media(max-width:768px){
-.flex{
-flex-direction:column;
-text-align:center;
-}
-.card{
-text-align:center;
-}
-.card .btn{
-align-self:center;
-}
-}  
+/* RESET */
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif;}
 html{scroll-behavior:smooth;}
 body{background:#f1f5f9;color:#1e293b;}
@@ -159,36 +88,80 @@ color:#fff;
 width:420px;border-radius:12px;
 box-shadow:0 15px 40px rgba(0,0,0,0.2);
 }
+
+/* BUTTON */
 .btn{
 display:inline-block;margin-top:20px;
 padding:12px 28px;background:#fff;
-color:#2563eb;border-radius:8px;text-decoration:none;font-weight:600;
+color:#2563eb;border-radius:8px;
+text-decoration:none;font-weight:600;
 transition:0.3s;
 }
 .btn:hover{transform:translateY(-2px);}
 
 /* SECTION */
-.section{padding:70px 60px;text-align:center;}
+.section{
+padding:70px 60px;
+text-align:center;
+}
+
+/* ✅ GRID FIX (FINAL) */
 .grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;margin-top:30px;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+margin-top:30px;
+align-items:stretch;
 }
+
+/* ✅ CARD FIX (FINAL) */
 .card{
-background:#fff;padding:25px;border-radius:14px;
+background:#fff;
+padding:25px;
+border-radius:14px;
 box-shadow:0 10px 25px rgba(0,0,0,0.05);
+display:flex;
+flex-direction:column;
+justify-content:space-between;
+height:100%;
 transition:0.3s;
+text-align:left;
 }
 .card:hover{transform:translateY(-5px);}
+
+/* ✅ IMAGE FIX */
 .card img{
 width:100%;
 height:180px;
 object-fit:cover;
 border-radius:10px;
-margin-bottom:10px;
+margin-bottom:12px;
 }
 
-/* STATS (MAROON) */
+/* BUTTON ALIGN FIX */
+.card .btn{
+margin-top:auto;
+align-self:flex-start;
+}
+
+/* ✅ FLEX FIX (FINAL) */
+.flex{
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:40px;
+flex-wrap:wrap;
+}
+.flex img{
+width:100%;
+max-width:350px;
+height:250px;
+object-fit:cover;
+border-radius:12px;
+box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* STATS */
 .stats{
 display:flex;
 justify-content:space-around;
@@ -198,17 +171,12 @@ padding:40px;
 flex-wrap:wrap;
 }
 
-/* FLEX */
-.flex{display:flex;align-items:center;gap:40px;flex-wrap:wrap;}
-.flex img{
-width:350px;border-radius:12px;
-box-shadow:0 10px 30px rgba(0,0,0,0.1);
-}
-
 /* CTA */
 .cta{
-background:#4f46e5;color:#fff;
-padding:60px;text-align:center;
+background:#4f46e5;
+color:#fff;
+padding:60px;
+text-align:center;
 }
 
 /* FORM */
@@ -242,19 +210,40 @@ footer a{display:block;color:#cbd5e1;text-decoration:none;margin:6px 0;}
 position:fixed;bottom:20px;right:20px;
 background:#25D366;color:#fff;
 padding:16px;border-radius:50%;
-text-decoration:none;font-size:22px;
+font-size:22px;
 box-shadow:0 10px 20px rgba(0,0,0,0.2);
 }
 
 /* RESPONSIVE */
 @media(max-width:768px){
+
 .hero{flex-direction:column;text-align:center;}
 .hero img{width:100%;margin-top:20px;}
+
 nav{padding:15px 20px;}
 .section{padding:50px 20px;}
-.topbar{padding:6px 20px;text-align:center;flex-direction:column;}
+
+.topbar{
+padding:6px 20px;
+text-align:center;
+flex-direction:column;
+}
+
+.flex{
+flex-direction:column;
+text-align:center;
+}
+
+.card{
+text-align:center;
+}
+
+.card .btn{
+align-self:center;
+}
 }
 </style>
+  
 </head>
 
 <body>
