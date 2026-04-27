@@ -18,21 +18,17 @@ body{background:#f1f5f9;color:#1e293b;}
 .topbar{
 background:#7f1d1d;
 color:#fff;
-padding:6px 60px;
-font-size:13px;
+padding:6px 40px;
 display:flex;
 justify-content:space-between;
 flex-wrap:wrap;
+font-size:13px;
 }
-.topbar span{margin-right:15px;}
-.topbar a{color:#fff;text-decoration:none;}
-.topbar a:hover{text-decoration:underline;}
 
 /* ANNOUNCEMENT */
 .announcement{
 background:#0f172a;color:#fff;
-padding:8px 0;font-size:14px;
-overflow:hidden;white-space:nowrap;
+padding:8px;overflow:hidden;white-space:nowrap;
 }
 .announcement span{
 display:inline-block;
@@ -46,90 +42,73 @@ animation:scroll 18s linear infinite;
 
 /* NAV */
 nav{
-position:sticky;top:0;z-index:1000;
-display:flex;justify-content:space-between;align-items:center;
-padding:15px 60px;background:#fff;
+position:sticky;top:0;
+display:flex;justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+background:#fff;
 box-shadow:0 4px 20px rgba(0,0,0,0.05);
+z-index:1000;
 }
-.logo{display:flex;align-items:center;gap:10px;}
-.logo img{width:40px;}
 nav a{
-margin-left:20px;text-decoration:none;
-color:#1e293b;font-weight:500;
+margin-left:20px;
+text-decoration:none;
+color:#1e293b;
 }
-nav a:hover{color:#2563eb;}
-
-/* DROPDOWN */
-.dropdown{position:relative;display:inline-block;}
-.dropdown-content{
-display:none;position:absolute;background:#fff;
-box-shadow:0 10px 20px rgba(0,0,0,0.1);
-border-radius:10px;top:30px;min-width:230px;
-padding:10px;
-}
-.dropdown-content h4{
-margin:10px 0 5px;font-size:14px;color:#64748b;
-}
-.dropdown-content a{
-display:block;padding:8px;border-radius:6px;
-text-decoration:none;color:#1e293b;
-}
-.dropdown-content a:hover{background:#f1f5f9;}
-.dropdown:hover .dropdown-content{display:block;}
+nav a:hover{color:#7f1d1d;}
 
 /* HERO */
 .hero{
-display:flex;align-items:center;justify-content:space-between;
-padding:90px 60px;flex-wrap:wrap;
+display:flex;
+flex-direction:column;
+align-items:center;
+text-align:center;
+padding:90px 20px;
 background:linear-gradient(135deg,#2563eb,#4f46e5);
 color:#fff;
 }
 .hero img{
-width:420px;border-radius:12px;
-box-shadow:0 15px 40px rgba(0,0,0,0.2);
+width:100%;
+max-width:420px;
+border-radius:12px;
+margin-top:20px;
 }
 
 /* BUTTON */
 .btn{
-display:inline-block;margin-top:20px;
-padding:12px 28px;background:#fff;
-color:#2563eb;border-radius:8px;
-text-decoration:none;font-weight:600;
-transition:0.3s;
+display:inline-block;
+margin-top:20px;
+padding:12px 25px;
+background:#fff;
+color:#2563eb;
+border-radius:8px;
+text-decoration:none;
 }
-.btn:hover{transform:translateY(-2px);}
 
 /* SECTION */
 .section{
-padding:70px 60px;
+padding:70px 20px;
+max-width:1200px;
+margin:auto;
 text-align:center;
 }
 
-/* ✅ GRID FIX (FINAL) */
+/* GRID */
 .grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 gap:25px;
 margin-top:30px;
-align-items:stretch;
 }
 
-/* ✅ CARD FIX (FINAL) */
+/* CARD */
 .card{
 background:#fff;
-padding:25px;
-border-radius:14px;
+padding:20px;
+border-radius:12px;
 box-shadow:0 10px 25px rgba(0,0,0,0.05);
-display:flex;
-flex-direction:column;
-justify-content:space-between;
-height:100%;
-transition:0.3s;
-text-align:left;
+text-align:center;
 }
-.card:hover{transform:translateY(-5px);}
-
-/* ✅ IMAGE FIX */
 .card img{
 width:100%;
 height:180px;
@@ -138,19 +117,13 @@ border-radius:10px;
 margin-bottom:12px;
 }
 
-/* BUTTON ALIGN FIX */
-.card .btn{
-margin-top:auto;
-align-self:flex-start;
-}
-
-/* ✅ FLEX FIX (FINAL) */
+/* FLEX CENTER */
 .flex{
 display:flex;
+flex-direction:column;
 align-items:center;
-justify-content:space-between;
-gap:40px;
-flex-wrap:wrap;
+gap:25px;
+text-align:center;
 }
 .flex img{
 width:100%;
@@ -158,136 +131,101 @@ max-width:350px;
 height:250px;
 object-fit:cover;
 border-radius:12px;
-box-shadow:0 10px 30px rgba(0,0,0,0.1);
 }
 
 /* STATS */
 .stats{
 display:flex;
-justify-content:space-around;
-background:linear-gradient(135deg,#7f1d1d,#991b1b);
+justify-content:center;
+gap:40px;
+background:#7f1d1d;
 color:#fff;
 padding:40px;
 flex-wrap:wrap;
 }
 
-/* CTA */
-.cta{
-background:#4f46e5;
-color:#fff;
-padding:60px;
-text-align:center;
-}
-
 /* FORM */
 .form{
-max-width:650px;margin:auto;
-background:#fff;padding:30px;border-radius:12px;
+max-width:600px;
+margin:auto;
+background:#fff;
+padding:25px;
+border-radius:12px;
 box-shadow:0 10px 30px rgba(0,0,0,0.1);
 }
 .form input,.form textarea,.form select{
-width:100%;padding:12px;margin:10px 0;
-border:1px solid #ddd;border-radius:8px;
+width:100%;
+padding:12px;
+margin:10px 0;
+border-radius:8px;
+border:1px solid #ddd;
 }
 .form button{
-background:#2563eb;color:#fff;
-padding:12px;border:none;border-radius:8px;
-cursor:pointer;width:100%;
+background:#7f1d1d;
+color:#fff;
+padding:12px;
+border:none;
+border-radius:8px;
+width:100%;
 }
 
 /* FOOTER */
-footer{background:#0f172a;color:#fff;padding:40px;}
-.footer-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:20px;
+footer{
+background:#020617;
+color:#fff;
+padding:40px;
+text-align:center;
 }
-footer a{display:block;color:#cbd5e1;text-decoration:none;margin:6px 0;}
-.copy{text-align:center;margin-top:20px;color:#94a3b8;}
 
-/* WHATSAPP */
+/* WHATSAPP BUTTON */
 .whatsapp{
-position:fixed;bottom:20px;right:20px;
-background:#25D366;color:#fff;
-padding:16px;border-radius:50%;
-font-size:22px;
-box-shadow:0 10px 20px rgba(0,0,0,0.2);
+position:fixed;
+bottom:20px;
+right:20px;
+width:60px;
+height:60px;
+background:#25D366;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+box-shadow:0 8px 20px rgba(0,0,0,0.2);
+z-index:999;
+transition:0.3s;
 }
 
-/* RESPONSIVE */
-@media(max-width:768px){
-
-.hero{flex-direction:column;text-align:center;}
-.hero img{width:100%;margin-top:20px;}
-
-nav{padding:15px 20px;}
-.section{padding:50px 20px;}
-
-.topbar{
-padding:6px 20px;
-text-align:center;
-flex-direction:column;
+.whatsapp img{
+width:32px;
 }
 
-.flex{
-flex-direction:column;
-text-align:center;
+.whatsapp:hover{
+transform:scale(1.1);
+box-shadow:0 10px 25px rgba(0,0,0,0.3);
 }
 
-.card{
-text-align:center;
-}
-
-.card .btn{
-align-self:center;
-}
-}
 </style>
-  
 </head>
 
 <body>
 
-<!-- TOP CONTACT BAR -->
+<!-- TOPBAR -->
 <div class="topbar">
-<div>
 <span>📧 edupublishsolutions@gmail.com</span>
 <span>📞 +91 XXXXX XXXXX</span>
-</div>
-<div>
-<span>Mon - Sat: 9AM - 8PM</span>
-</div>
 </div>
 
 <!-- ANNOUNCEMENT -->
 <div class="announcement">
-<span>🔥 Fast Publication in Scopus & Web of Science Journals | Limited Slots Available | Submit Today 🚀</span>
+<span>🔥 Fast Publication in Scopus & Web of Science Journals | Limited Slots Available 🚀</span>
 </div>
 
 <!-- NAV -->
 <nav>
-<div class="logo">
-<img src="logo.png">
 <h3>EduPublish</h3>
-</div>
-
 <div>
 <a href="#">Home</a>
-<a href="#about">About Us</a>
+<a href="#about">About</a>
 <a href="#services">Services</a>
-
-<div class="dropdown">
-<a href="#">More ▾</a>
-<div class="dropdown-content">
-
-<h4>Quick Links</h4>
-<a href="#form">Submit Paper</a>
-<a href="#">Track Status</a>
-<a href="#">Pricing</a>
-
-</div>
-</div>
-
 <a href="#blog">Blog</a>
 <a href="#form">Contact</a>
 </div>
@@ -295,83 +233,23 @@ align-self:center;
 
 <!-- HERO -->
 <section class="hero">
-<div>
 <h1>Publish Your Research in Top Journals</h1>
 <p>Scopus | Web of Science | SCI Indexed Journals</p>
 <a href="#form" class="btn">Submit Paper</a>
-</div>
 <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786">
 </section>
 
-<section class="hero" id="home">
-
-  <div class="offer-badge">
-    
-    🎉 Limited Time Offer – Get Up to 10% Discount on Publication Services
-  </div>
-
-  
-  <h2>Professional and Rapid Research Articles Publication Support</h2>
-
-  <p>
-    Our End-to-End Publication Assistance covers every stage of the research publishing process. 
-    From identifying the right indexed journal to professional editing, technical formatting, 
-    plagiarism compliance, submission handling, and post-review revisions — we ensure your 
-    manuscript meets international standards and reaches publication efficiently and ethically.
-  </p>
-
-  <a href="mailto:edupublishsolutions@gmail.com" class="btn">
-    Get Consultation
-  </a>
-
-</section>  
-
-<!-- STATS -->
-<section class="stats">
-<div><h2>500+</h2><p>Papers Published</p></div>
-<div><h2>300+</h2><p>Happy Authors</p></div>
-<div><h2>50+</h2><p>Journal Partners</p></div>
-<div><h2>24/7</h2><p>Support</p></div>
-</section>
-
 <!-- ABOUT -->
-<section class="section flex" id="about">
+<section class="section" id="about">
+<div class="flex">
 <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d">
 <div>
 <h2>About Us</h2>
-    <p>
-      <strong>EduPublish Solutions</strong> is a leading academic publication support platform dedicated to helping 
-      researchers, scholars, professors, and research students successfully publish their work in 
-      <strong>reputed international and Scopus-indexed journals</strong>. We provide reliable and ethical 
-      research publication services designed to simplify the complex academic publishing process.
-    </p>
-
-    <p>
-      Our team of experienced professionals offers <strong>end-to-end publication assistance</strong>, 
-      including journal selection, manuscript formatting, plagiarism checking, professional language editing, 
-      submission support, and peer-review guidance. We ensure that every research manuscript meets 
-      <strong>international publishing standards</strong> and increases the chances of acceptance in 
-      high-quality journals.
-    </p>
-
-    <p>
-      At EduPublish Solutions, we understand that publishing research can be challenging. That’s why we focus on 
-      providing <strong>fast, transparent, and professional support</strong> to help authors achieve successful 
-      publication outcomes without unnecessary delays.
-    </p>
-
-    <p>
-      Our mission is to make <strong>global research publication accessible and efficient</strong> for scholars 
-      worldwide. By combining academic expertise with professional publishing support, we help researchers 
-      transform their ideas and discoveries into <strong>high-impact published research</strong>.
-    </p>
-
-    <p>
-      With a commitment to <strong>quality, confidentiality, and author satisfaction</strong>, 
-      Edu Publish Solutions has become a trusted partner for researchers seeking 
-      <strong>Scopus journal publication assistance</strong> and international research publishing support.
-    </p>
+<p>EduPublish Solutions is a leading academic publication support platform dedicated to helping researchers publish successfully.</p>
 </div>
+</div>
+</section>
+
 <!-- SERVICES -->
 <section class="section" id="services">
 <h2>Our Services</h2>
@@ -422,153 +300,14 @@ align-self:center;
 
 <div class="card">
 <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678">
-<h4>Conference</h4>
-<p>Join international conferences & proceedings.</p>
+<h4>Conference & Proceedings</h4>
+<p>Join international conferences & publish in proceedings.</p>
 <a href="#conference" class="btn">Read More</a>
 </div>
 
 </div>
 </section>
 
-<!-- SCOPUS -->
-<section class="section" id="scopus">
-<h2>Scopus Publication</h2>
-<div class="flex">
-<img src="https://images.unsplash.com/photo-1552664730-d307ca884978">
-<div>
-<p>We help you publish your research paper in Scopus indexed journals with expert guidance and fast processing.</p>
-<h4>Quick Features:</h4>
-<ul style="text-align:left;">
-<li>✔ Fast review process</li>
-<li>✔ High acceptance rate journals</li>
-<li>✔ Plagiarism support</li>
-<li>✔ Formatting & proofreading</li>
-<li>✔ End-to-end assistance</li>
-</ul>
-<a href="#form" class="btn">Submit Paper</a>
-</div>
-</div>
-</section>
-
-<!-- WOS -->
-<section class="section" id="wos">
-<h2>Web of Science Publication</h2>
-<div class="flex">
-<img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f">
-<div>
-<p>Publish your paper in Web of Science indexed journals with expert consultation and journal selection.</p>
-<h4>Quick Features:</h4>
-<ul style="text-align:left;">
-<li>✔ SCI / SCIE journals</li>
-<li>✔ Impact factor journals</li>
-<li>✔ Reviewer support</li>
-<li>✔ Quality improvement</li>
-<li>✔ Fast processing</li>
-</ul>
-<a href="#form" class="btn">Submit Paper</a>
-</div>
-</div>
-</section>
-
-<!-- THESIS -->
-<section class="section" id="thesis">
-<h2>Thesis Writing Support</h2>
-<div class="flex">
-<img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173">
-<div>
-<p>Complete thesis writing support including formatting, editing, and plagiarism correction.</p>
-<h4>Quick Features:</h4>
-<ul style="text-align:left;">
-<li>✔ Complete thesis writing</li>
-<li>✔ Formatting as per university</li>
-<li>✔ Turnitin report</li>
-<li>✔ Proofreading</li>
-<li>✔ Expert consultation</li>
-</ul>
-<a href="#form" class="btn">Submit Paper</a>
-</div>
-</div>
-</section>
-
-<!-- BOOK -->
-<section class="section" id="book">
-<h2>Book Publication</h2>
-<div class="flex">
-<img src="https://images.unsplash.com/photo-1512820790803-83ca734da794">
-<div>
-<p>Publish your book with ISBN and global distribution on platforms like Amazon and Google Books.</p>
-<h4>Quick Features:</h4>
-<ul style="text-align:left;">
-<li>✔ ISBN Registration</li>
-<li>✔ Global Distribution</li>
-<li>✔ Cover Design</li>
-<li>✔ Formatting & Editing</li>
-<li>✔ Print + eBook Publication</li>
-</ul>
-<a href="#form" class="btn">Submit Request</a>
-</div>
-</div>
-</section>
-
-<!-- PATENT -->
-<section class="section" id="patent">
-<h2>Patent Publication</h2>
-<div class="flex">
-<img src="https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0">
-<div>
-<p>Get your innovation legally protected with our patent filing and publication support.</p>
-<h4>Quick Features:</h4>
-<ul style="text-align:left;">
-<li>✔ Patent Drafting</li>
-<li>✔ Filing Support</li>
-<li>✔ Government Process Assistance</li>
-<li>✔ Documentation Help</li>
-<li>✔ Fast Processing</li>
-</ul>
-<a href="#form" class="btn">Apply Now</a>
-</div>
-</div>
-</section>
-
-<!-- WRITING -->
-<section class="section" id="writing">
-<h2>Writing Services</h2>
-<div class="flex">
-<img src="https://images.unsplash.com/photo-1455390582262-044cdead277a">
-<div>
-<p>Professional academic writing services for research papers, theses, and articles.</p>
-<h4>Quick Features:</h4>
-<ul style="text-align:left;">
-<li>✔ Research Paper Writing</li>
-<li>✔ Thesis Writing</li>
-<li>✔ Plagiarism-Free Content</li>
-<li>✔ Expert Writers</li>
-<li>✔ On-Time Delivery</li>
-</ul>
-<a href="#form" class="btn">Get Started</a>
-</div>
-</div>
-</section>
-
-<!-- CONFERENCE -->
-<section class="section" id="conference">
-<h2>Conference & Proceedings</h2>
-<div class="flex">
-<img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678">
-<div>
-<p>Present your research at international conferences and publish in conference proceedings.</p>
-<h4>Quick Features:</h4>
-<ul style="text-align:left;">
-<li>✔ International Conferences</li>
-<li>✔ Scopus Proceedings</li>
-<li>✔ Presentation Support</li>
-<li>✔ Certificate Assistance</li>
-<li>✔ Fast Registration</li>
-</ul>
-<a href="#form" class="btn">Register Now</a>
-</div>
-</div>
-</section>
 <!-- BLOG -->
 <section class="section" id="blog">
 <h2>Latest Blogs</h2>
@@ -578,19 +317,16 @@ align-self:center;
 <div class="card">
 <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40">
 <h4>How to Publish in Scopus Journals</h4>
-<p>Step-by-step guide for beginners.</p>
 </div>
 
 <div class="card">
 <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c">
 <h4>Avoid Plagiarism in Research</h4>
-<p>Best practices to ensure originality.</p>
 </div>
 
 <div class="card">
 <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173">
 <h4>Top Journals for 2026</h4>
-<p>Updated list of indexed journals.</p>
 </div>
 
 </div>
@@ -600,59 +336,26 @@ align-self:center;
 <section class="section" id="form">
 <h2>Submit Your Paper</h2>
 
-<form class="form" action="https://formsubmit.co/edupublishsolutions@gmail.com" method="POST" enctype="multipart/form-data">
-
-<input type="text" name="name" placeholder="Your Name" required>
-<input type="email" name="email" placeholder="Your Email" required>
-<input type="tel" name="phone" placeholder="Phone Number" required>
-
-<select name="journal">
-<option>Scopus</option>
-<option>Web of Science</option>
-<option>SCI</option>
-</select>
-
-<textarea name="message" placeholder="Paper Details"></textarea>
-
-<input type="file" name="file">
-
-<input type="hidden" name="_captcha" value="false">
-
-<button type="submit">Submit Paper</button>
-
+<form class="form">
+<input type="text" placeholder="Your Name">
+<input type="email" placeholder="Your Email">
+<textarea placeholder="Paper Details"></textarea>
+<button>Submit</button>
 </form>
+
 </section>
 
 <!-- FOOTER -->
 <footer>
-<div class="footer-grid">
-
-<div>
-<h3>Quick Links</h3>
-<a href="#about">About</a>
-<a href="#">FAQ</a>
-<a href="#form">Contact</a>
-</div>
-
-<div>
-<h3>Services</h3>
-<a href="#">Publication</a>
-<a href="#">Consultation</a>
-<a href="#">Formatting</a>
-</div>
-
-<div>
-<h3>Contact</h3>
-<p>Email: edupublishsolutions@gmail.com</p>
-<p>Phone: +91 XXXXX XXXXX</p>
-</div>
-
-</div>
-<div class="copy">© 2026 EduPublish Solutions</div>
+<p>© 2026 EduPublish Solutions</p>
 </footer>
 
-<!-- WHATSAPP -->
-<a href="https://wa.me/91XXXXXXXXXX" class="whatsapp">💬</a>
+<!-- WHATSAPP BUTTON -->
+<a href="https://wa.me/919XXXXXXXXX?text=Hello%20EduPublish%20Solutions,%20I%20want%20to%20publish%20my%20paper"
+   class="whatsapp"
+   target="_blank">
+   <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+</a>
 
 </body>
 </html>
