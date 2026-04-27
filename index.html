@@ -8,6 +8,79 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
+
+/* GRID FIX (perfect horizontal alignment) */
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+margin-top:30px;
+align-items:stretch;
+}
+
+/* CARD FIX */
+.card{
+background:#fff;
+padding:20px;
+border-radius:12px;
+box-shadow:0 5px 20px rgba(0,0,0,0.05);
+display:flex;
+flex-direction:column;
+justify-content:space-between;
+text-align:left;
+height:100%;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+/* IMAGE FIX (same size for all cards) */
+.card img{
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:10px;
+margin-bottom:15px;
+}
+
+/* BUTTON ALIGN SAME LINE */
+.card .btn{
+margin-top:auto;
+align-self:flex-start;
+}
+
+/* FLEX SECTION FIX */
+.flex{
+display:flex;
+align-items:center;
+gap:40px;
+flex-wrap:wrap;
+justify-content:space-between;
+}
+
+.flex img{
+width:100%;
+max-width:350px;
+height:250px;
+object-fit:cover;
+border-radius:12px;
+}
+
+/* MOBILE FIX */
+@media(max-width:768px){
+.flex{
+flex-direction:column;
+text-align:center;
+}
+.card{
+text-align:center;
+}
+.card .btn{
+align-self:center;
+}
+}  
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif;}
 html{scroll-behavior:smooth;}
 body{background:#f1f5f9;color:#1e293b;}
