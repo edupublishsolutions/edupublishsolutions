@@ -11,77 +11,77 @@
 
 /* RESET */
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif;}
+body{background:#f8fafc;color:#1e293b;}
 html{scroll-behavior:smooth;}
-body{background:#f1f5f9;color:#1e293b;}
+
+/* THEME */
+:root{
+--primary:#7f1d1d;
+--secondary:#991b1b;
+}
 
 /* TOPBAR */
 .topbar{
-background:#7f1d1d;
+background:var(--primary);
 color:#fff;
-padding:6px 40px;
+padding:8px 40px;
 display:flex;
 justify-content:space-between;
 flex-wrap:wrap;
-font-size:13px;
+font-size:14px;
 }
 
 /* ANNOUNCEMENT */
 .announcement{
-background:#0f172a;color:#fff;
-padding:8px;overflow:hidden;white-space:nowrap;
+background:#020617;
+color:#fff;
+overflow:hidden;
+white-space:nowrap;
+padding:10px 0;
 }
-.announcement span{
+.announcement p{
 display:inline-block;
 padding-left:100%;
-animation:scroll 18s linear infinite;
+animation:scrollText 18s linear infinite;
 }
-@keyframes scroll{
+@keyframes scrollText{
 0%{transform:translateX(0);}
 100%{transform:translateX(-100%);}
 }
 
 /* NAV */
 nav{
-position:sticky;top:0;
-display:flex;justify-content:space-between;
-align-items:center;
+display:flex;
+justify-content:space-between;
 padding:15px 40px;
 background:#fff;
+position:sticky;
+top:0;
 box-shadow:0 4px 20px rgba(0,0,0,0.05);
 z-index:1000;
 }
-nav a{
-margin-left:20px;
-text-decoration:none;
-color:#1e293b;
-}
-nav a:hover{color:#7f1d1d;}
 
 /* HERO */
 .hero{
-display:flex;
-flex-direction:column;
-align-items:center;
 text-align:center;
 padding:90px 20px;
-background:linear-gradient(135deg,#2563eb,#4f46e5);
+background:linear-gradient(135deg,var(--primary),var(--secondary));
 color:#fff;
 }
 .hero img{
-width:100%;
-max-width:420px;
-border-radius:12px;
 margin-top:20px;
+max-width:400px;
+border-radius:10px;
 }
 
 /* BUTTON */
 .btn{
-display:inline-block;
-margin-top:20px;
-padding:12px 25px;
 background:#fff;
-color:#2563eb;
+color:var(--primary);
+padding:10px 20px;
 border-radius:8px;
+display:inline-block;
+margin-top:15px;
 text-decoration:none;
 }
 
@@ -96,9 +96,9 @@ text-align:center;
 /* GRID */
 .grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
 gap:25px;
-margin-top:30px;
+margin-top:20px;
 }
 
 /* CARD */
@@ -107,41 +107,40 @@ background:#fff;
 padding:20px;
 border-radius:12px;
 box-shadow:0 10px 25px rgba(0,0,0,0.05);
-text-align:center;
 }
 .card img{
 width:100%;
-height:180px;
+height:170px;
 object-fit:cover;
 border-radius:10px;
-margin-bottom:12px;
-}
-
-/* FLEX CENTER */
-.flex{
-display:flex;
-flex-direction:column;
-align-items:center;
-gap:25px;
-text-align:center;
-}
-.flex img{
-width:100%;
-max-width:350px;
-height:250px;
-object-fit:cover;
-border-radius:12px;
+margin-bottom:10px;
 }
 
 /* STATS */
 .stats{
+background:var(--primary);
+color:#fff;
 display:flex;
 justify-content:center;
-gap:40px;
-background:#7f1d1d;
-color:#fff;
+gap:50px;
 padding:40px;
 flex-wrap:wrap;
+}
+
+/* SERVICE DETAIL */
+.service-detail{
+padding:60px 20px;
+background:#fff;
+margin:20px auto;
+max-width:1000px;
+border-radius:12px;
+box-shadow:0 5px 20px rgba(0,0,0,0.05);
+}
+.service-detail img{
+width:100%;
+max-width:500px;
+border-radius:10px;
+margin:15px 0;
 }
 
 /* FORM */
@@ -151,33 +150,22 @@ margin:auto;
 background:#fff;
 padding:25px;
 border-radius:12px;
-box-shadow:0 10px 30px rgba(0,0,0,0.1);
 }
-.form input,.form textarea,.form select{
+.form input,.form textarea{
 width:100%;
 padding:12px;
 margin:10px 0;
-border-radius:8px;
-border:1px solid #ddd;
-}
-.form button{
-background:#7f1d1d;
-color:#fff;
-padding:12px;
-border:none;
-border-radius:8px;
-width:100%;
 }
 
 /* FOOTER */
 footer{
 background:#020617;
 color:#fff;
-padding:40px;
 text-align:center;
+padding:30px;
 }
 
-/* WHATSAPP BUTTON */
+/* WHATSAPP */
 .whatsapp{
 position:fixed;
 bottom:20px;
@@ -190,18 +178,8 @@ display:flex;
 align-items:center;
 justify-content:center;
 box-shadow:0 8px 20px rgba(0,0,0,0.2);
-z-index:999;
-transition:0.3s;
 }
-
-.whatsapp img{
-width:32px;
-}
-
-.whatsapp:hover{
-transform:scale(1.1);
-box-shadow:0 10px 25px rgba(0,0,0,0.3);
-}
+.whatsapp img{width:30px;}
 
 </style>
 </head>
@@ -211,12 +189,12 @@ box-shadow:0 10px 25px rgba(0,0,0,0.3);
 <!-- TOPBAR -->
 <div class="topbar">
 <span>📧 edupublishsolutions@gmail.com</span>
-<span>📞 +91 XXXXX XXXXX</span>
+<span>📞 +91 XXXXX XXXXX | 🕒 Mon-Sat 9AM-7PM</span>
 </div>
 
 <!-- ANNOUNCEMENT -->
 <div class="announcement">
-<span>🔥 Fast Publication in Scopus & Web of Science Journals | Limited Slots Available 🚀</span>
+<p>🔥 Fast Publication in Scopus & Web of Science Journals | 📄 Paper Submission Open | 🚀 Limited Slots Available | 📞 Contact Now</p>
 </div>
 
 <!-- NAV -->
@@ -224,9 +202,7 @@ box-shadow:0 10px 25px rgba(0,0,0,0.3);
 <h3>EduPublish</h3>
 <div>
 <a href="#">Home</a>
-<a href="#about">About</a>
 <a href="#services">Services</a>
-<a href="#blog">Blog</a>
 <a href="#form">Contact</a>
 </div>
 </nav>
@@ -234,20 +210,17 @@ box-shadow:0 10px 25px rgba(0,0,0,0.3);
 <!-- HERO -->
 <section class="hero">
 <h1>Publish Your Research in Top Journals</h1>
-<p>Scopus | Web of Science | SCI Indexed Journals</p>
+<p>Scopus | Web of Science | SCI Journals</p>
 <a href="#form" class="btn">Submit Paper</a>
 <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786">
 </section>
 
-<!-- ABOUT -->
-<section class="section" id="about">
-<div class="flex">
-<img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d">
-<div>
-<h2>About Us</h2>
-<p>EduPublish Solutions is a leading academic publication support platform dedicated to helping researchers publish successfully.</p>
-</div>
-</div>
+<!-- STATS -->
+<section class="stats">
+<div><h2>500+</h2><p>Papers Published</p></div>
+<div><h2>200+</h2><p>Happy Clients</p></div>
+<div><h2>50+</h2><p>Journals</p></div>
+<div><h2>5+</h2><p>Years Experience</p></div>
 </section>
 
 <!-- SERVICES -->
@@ -259,90 +232,94 @@ box-shadow:0 10px 25px rgba(0,0,0,0.3);
 <div class="card">
 <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40">
 <h4>Scopus Publication</h4>
-<p>Fast-track publication in Scopus indexed journals.</p>
 <a href="#scopus" class="btn">Read More</a>
 </div>
 
 <div class="card">
 <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952">
 <h4>Web of Science</h4>
-<p>Get published in high-impact WoS journals.</p>
 <a href="#wos" class="btn">Read More</a>
 </div>
 
 <div class="card">
 <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216">
 <h4>Thesis Support</h4>
-<p>Complete thesis writing & formatting support.</p>
 <a href="#thesis" class="btn">Read More</a>
 </div>
 
 <div class="card">
 <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794">
 <h4>Book Publication</h4>
-<p>Publish your book with ISBN and global distribution.</p>
 <a href="#book" class="btn">Read More</a>
 </div>
 
 <div class="card">
 <img src="https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0">
-<h4>Patent Publication</h4>
-<p>Protect your innovation with patent filing support.</p>
+<h4>Patent</h4>
 <a href="#patent" class="btn">Read More</a>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1455390582262-044cdead277a">
-<h4>Writing Services</h4>
-<p>Professional academic writing by experts.</p>
-<a href="#writing" class="btn">Read More</a>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678">
-<h4>Conference & Proceedings</h4>
-<p>Join international conferences & publish in proceedings.</p>
-<a href="#conference" class="btn">Read More</a>
 </div>
 
 </div>
 </section>
 
-<!-- BLOG -->
-<section class="section" id="blog">
-<h2>Latest Blogs</h2>
+<!-- SERVICE DETAILS -->
 
-<div class="grid">
+<section id="scopus" class="service-detail">
+<h2>Scopus Publication</h2>
+<img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b">
+<p>We provide fast-track publication in Scopus indexed journals.</p>
+<ul>
+<li>Fast review</li>
+<li>Low APC</li>
+<li>High acceptance</li>
+</ul>
+</section>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40">
-<h4>How to Publish in Scopus Journals</h4>
-</div>
+<section id="wos" class="service-detail">
+<h2>Web of Science</h2>
+<img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85">
+<ul>
+<li>Impact factor journals</li>
+<li>Expert support</li>
+</ul>
+</section>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c">
-<h4>Avoid Plagiarism in Research</h4>
-</div>
+<section id="thesis" class="service-detail">
+<h2>Thesis Support</h2>
+<img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644">
+<ul>
+<li>Writing</li>
+<li>Formatting</li>
+</ul>
+</section>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173">
-<h4>Top Journals for 2026</h4>
-</div>
+<section id="book" class="service-detail">
+<h2>Book Publication</h2>
+<img src="https://images.unsplash.com/photo-1512820790803-83ca734da794">
+<ul>
+<li>ISBN</li>
+<li>Amazon listing</li>
+</ul>
+</section>
 
-</div>
+<section id="patent" class="service-detail">
+<h2>Patent Filing</h2>
+<img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc">
+<ul>
+<li>Documentation</li>
+<li>Filing support</li>
+</ul>
 </section>
 
 <!-- FORM -->
 <section class="section" id="form">
-<h2>Submit Your Paper</h2>
-
+<h2>Submit Paper</h2>
 <form class="form">
-<input type="text" placeholder="Your Name">
-<input type="email" placeholder="Your Email">
-<textarea placeholder="Paper Details"></textarea>
+<input type="text" placeholder="Name">
+<input type="email" placeholder="Email">
+<textarea placeholder="Details"></textarea>
 <button>Submit</button>
 </form>
-
 </section>
 
 <!-- FOOTER -->
@@ -350,11 +327,9 @@ box-shadow:0 10px 25px rgba(0,0,0,0.3);
 <p>© 2026 EduPublish Solutions</p>
 </footer>
 
-<!-- WHATSAPP BUTTON -->
-<a href="https://wa.me/919XXXXXXXXX?text=Hello%20EduPublish%20Solutions,%20I%20want%20to%20publish%20my%20paper"
-   class="whatsapp"
-   target="_blank">
-   <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+<!-- WHATSAPP -->
+<a href="https://wa.me/919XXXXXXXXX?text=Hello%20EduPublish%20Solutions" class="whatsapp" target="_blank">
+<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
 </a>
 
 </body>
