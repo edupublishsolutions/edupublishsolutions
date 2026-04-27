@@ -8,219 +8,254 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
-
-/* RESET */
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif;}
-body{background:#f8fafc;color:#1e293b;}
 html{scroll-behavior:smooth;}
-
-/* THEME */
-:root{
---primary:#7f1d1d;
---secondary:#991b1b;
-}
+body{background:#f1f5f9;color:#1e293b;}
 
 /* TOPBAR */
 .topbar{
-background:var(--primary);
+background:#7f1d1d;
 color:#fff;
-padding:8px 40px;
+padding:6px 60px;
+font-size:13px;
 display:flex;
 justify-content:space-between;
 flex-wrap:wrap;
-font-size:14px;
 }
+.topbar span{margin-right:15px;}
+.topbar a{color:#fff;text-decoration:none;}
+.topbar a:hover{text-decoration:underline;}
 
 /* ANNOUNCEMENT */
 .announcement{
-background:#020617;
-color:#fff;
-overflow:hidden;
-white-space:nowrap;
-padding:10px 0;
+background:#0f172a;color:#fff;
+padding:8px 0;font-size:14px;
+overflow:hidden;white-space:nowrap;
 }
-.announcement p{
+.announcement span{
 display:inline-block;
 padding-left:100%;
-animation:scrollText 18s linear infinite;
+animation:scroll 18s linear infinite;
 }
-@keyframes scrollText{
+@keyframes scroll{
 0%{transform:translateX(0);}
 100%{transform:translateX(-100%);}
 }
 
 /* NAV */
 nav{
-display:flex;
-justify-content:space-between;
-padding:15px 40px;
-background:#fff;
-position:sticky;
-top:0;
+position:sticky;top:0;z-index:1000;
+display:flex;justify-content:space-between;align-items:center;
+padding:15px 60px;background:#fff;
 box-shadow:0 4px 20px rgba(0,0,0,0.05);
-z-index:1000;
 }
+.logo{display:flex;align-items:center;gap:10px;}
+.logo img{width:40px;}
+nav a{
+margin-left:20px;text-decoration:none;
+color:#1e293b;font-weight:500;
+}
+nav a:hover{color:#2563eb;}
+
+/* DROPDOWN */
+.dropdown{position:relative;display:inline-block;}
+.dropdown-content{
+display:none;position:absolute;background:#fff;
+box-shadow:0 10px 20px rgba(0,0,0,0.1);
+border-radius:10px;top:30px;min-width:230px;
+padding:10px;
+}
+.dropdown-content h4{
+margin:10px 0 5px;font-size:14px;color:#64748b;
+}
+.dropdown-content a{
+display:block;padding:8px;border-radius:6px;
+text-decoration:none;color:#1e293b;
+}
+.dropdown-content a:hover{background:#f1f5f9;}
+.dropdown:hover .dropdown-content{display:block;}
 
 /* HERO */
 .hero{
-text-align:center;
-padding:90px 20px;
-background:linear-gradient(135deg,var(--primary),var(--secondary));
+display:flex;align-items:center;justify-content:space-between;
+padding:90px 60px;flex-wrap:wrap;
+background:linear-gradient(135deg,#2563eb,#4f46e5);
 color:#fff;
 }
 .hero img{
-margin-top:20px;
-max-width:400px;
-border-radius:10px;
+width:420px;border-radius:12px;
+box-shadow:0 15px 40px rgba(0,0,0,0.2);
 }
-
-/* BUTTON */
 .btn{
-background:#fff;
-color:var(--primary);
-padding:10px 20px;
-border-radius:8px;
-display:inline-block;
-margin-top:15px;
-text-decoration:none;
+display:inline-block;margin-top:20px;
+padding:12px 28px;background:#fff;
+color:#2563eb;border-radius:8px;text-decoration:none;font-weight:600;
+transition:0.3s;
 }
+.btn:hover{transform:translateY(-2px);}
 
 /* SECTION */
-.section{
-padding:70px 20px;
-max-width:1200px;
-margin:auto;
-text-align:center;
-}
-
-/* GRID */
+.section{padding:70px 60px;text-align:center;}
 .grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:25px;
-margin-top:20px;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;margin-top:30px;
 }
-
-/* CARD */
 .card{
-background:#fff;
-padding:20px;
-border-radius:12px;
+background:#fff;padding:25px;border-radius:14px;
 box-shadow:0 10px 25px rgba(0,0,0,0.05);
+transition:0.3s;
 }
+.card:hover{transform:translateY(-5px);}
 .card img{
 width:100%;
-height:170px;
+height:180px;
 object-fit:cover;
 border-radius:10px;
 margin-bottom:10px;
 }
 
-/* STATS */
+/* STATS (MAROON) */
 .stats{
-background:var(--primary);
-color:#fff;
 display:flex;
-justify-content:center;
-gap:50px;
+justify-content:space-around;
+background:linear-gradient(135deg,#7f1d1d,#991b1b);
+color:#fff;
 padding:40px;
 flex-wrap:wrap;
 }
 
-/* SERVICE DETAIL */
-.service-detail{
-padding:60px 20px;
-background:#fff;
-margin:20px auto;
-max-width:1000px;
-border-radius:12px;
-box-shadow:0 5px 20px rgba(0,0,0,0.05);
+/* FLEX */
+.flex{display:flex;align-items:center;gap:40px;flex-wrap:wrap;}
+.flex img{
+width:350px;border-radius:12px;
+box-shadow:0 10px 30px rgba(0,0,0,0.1);
 }
-.service-detail img{
-width:100%;
-max-width:500px;
-border-radius:10px;
-margin:15px 0;
+
+/* CTA */
+.cta{
+background:#4f46e5;color:#fff;
+padding:60px;text-align:center;
 }
 
 /* FORM */
 .form{
-max-width:600px;
-margin:auto;
-background:#fff;
-padding:25px;
-border-radius:12px;
+max-width:650px;margin:auto;
+background:#fff;padding:30px;border-radius:12px;
+box-shadow:0 10px 30px rgba(0,0,0,0.1);
 }
-.form input,.form textarea{
-width:100%;
-padding:12px;
-margin:10px 0;
+.form input,.form textarea,.form select{
+width:100%;padding:12px;margin:10px 0;
+border:1px solid #ddd;border-radius:8px;
+}
+.form button{
+background:#2563eb;color:#fff;
+padding:12px;border:none;border-radius:8px;
+cursor:pointer;width:100%;
 }
 
 /* FOOTER */
-footer{
-background:#020617;
-color:#fff;
-text-align:center;
-padding:30px;
+footer{background:#0f172a;color:#fff;padding:40px;}
+.footer-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
 }
+footer a{display:block;color:#cbd5e1;text-decoration:none;margin:6px 0;}
+.copy{text-align:center;margin-top:20px;color:#94a3b8;}
 
 /* WHATSAPP */
 .whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-width:60px;
-height:60px;
-background:#25D366;
-border-radius:50%;
-display:flex;
-align-items:center;
-justify-content:center;
-box-shadow:0 8px 20px rgba(0,0,0,0.2);
+position:fixed;bottom:20px;right:20px;
+background:#25D366;color:#fff;
+padding:16px;border-radius:50%;
+text-decoration:none;font-size:22px;
+box-shadow:0 10px 20px rgba(0,0,0,0.2);
 }
-.whatsapp img{width:30px;}
 
+/* RESPONSIVE */
+@media(max-width:768px){
+.hero{flex-direction:column;text-align:center;}
+.hero img{width:100%;margin-top:20px;}
+nav{padding:15px 20px;}
+.section{padding:50px 20px;}
+.topbar{padding:6px 20px;text-align:center;flex-direction:column;}
+}
 </style>
 </head>
 
 <body>
 
-<!-- TOPBAR -->
+<!-- TOP CONTACT BAR -->
 <div class="topbar">
+<div>
 <span>📧 edupublishsolutions@gmail.com</span>
-<span>📞 +91 XXXXX XXXXX | 🕒 Mon-Sat 9AM-7PM</span>
+<span>📞 +91 XXXXX XXXXX</span>
+</div>
+<div>
+<span>Mon - Sat: 9AM - 8PM</span>
+</div>
 </div>
 
 <!-- ANNOUNCEMENT -->
 <div class="announcement">
-<p>🔥 Fast Publication in Scopus & Web of Science Journals | 📄 Paper Submission Open | 🚀 Limited Slots Available | 📞 Contact Now</p>
+<span>🔥 Fast Publication in Scopus & Web of Science Journals | Limited Slots Available | Submit Today 🚀</span>
 </div>
 
 <!-- NAV -->
 <nav>
+<div class="logo">
+<img src="https://cdn-icons-png.flaticon.com/512/3135/3135755.png">
 <h3>EduPublish</h3>
+</div>
+
 <div>
 <a href="#">Home</a>
+<a href="#about">About Us</a>
 <a href="#services">Services</a>
+
+<div class="dropdown">
+<a href="#">More ▾</a>
+<div class="dropdown-content">
+
+<h4>Quick Links</h4>
+<a href="#form">Submit Paper</a>
+<a href="#">Track Status</a>
+<a href="#">Pricing</a>
+
+</div>
+</div>
+
+<a href="#blog">Blog</a>
 <a href="#form">Contact</a>
 </div>
 </nav>
 
 <!-- HERO -->
 <section class="hero">
+<div>
 <h1>Publish Your Research in Top Journals</h1>
-<p>Scopus | Web of Science | SCI Journals</p>
+<p>Scopus | Web of Science | SCI Indexed Journals</p>
 <a href="#form" class="btn">Submit Paper</a>
+</div>
 <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786">
 </section>
 
 <!-- STATS -->
 <section class="stats">
 <div><h2>500+</h2><p>Papers Published</p></div>
-<div><h2>200+</h2><p>Happy Clients</p></div>
-<div><h2>50+</h2><p>Journals</p></div>
-<div><h2>5+</h2><p>Years Experience</p></div>
+<div><h2>300+</h2><p>Happy Authors</p></div>
+<div><h2>50+</h2><p>Journal Partners</p></div>
+<div><h2>24/7</h2><p>Support</p></div>
+</section>
+
+<!-- ABOUT -->
+<section class="section flex" id="about">
+<img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d">
+<div>
+<h2>About Us</h2>
+<p>We help researchers, students, and professionals publish their work in reputed indexed journals with expert guidance and fast processing.</p>
+</div>
 </section>
 
 <!-- SERVICES -->
@@ -232,105 +267,171 @@ box-shadow:0 8px 20px rgba(0,0,0,0.2);
 <div class="card">
 <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40">
 <h4>Scopus Publication</h4>
+<p>Fast-track publication in Scopus indexed journals.</p>
 <a href="#scopus" class="btn">Read More</a>
 </div>
 
 <div class="card">
 <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952">
 <h4>Web of Science</h4>
+<p>Get published in high-impact WoS journals.</p>
 <a href="#wos" class="btn">Read More</a>
 </div>
 
 <div class="card">
 <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216">
 <h4>Thesis Support</h4>
+<p>Complete thesis writing & formatting support.</p>
 <a href="#thesis" class="btn">Read More</a>
 </div>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1512820790803-83ca734da794">
-<h4>Book Publication</h4>
-<a href="#book" class="btn">Read More</a>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0">
-<h4>Patent</h4>
-<a href="#patent" class="btn">Read More</a>
-</div>
-
 </div>
 </section>
 
-<!-- SERVICE DETAILS -->
-
-<section id="scopus" class="service-detail">
+<!-- SCOPUS -->
+<section class="section" id="scopus">
 <h2>Scopus Publication</h2>
-<img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b">
-<p>We provide fast-track publication in Scopus indexed journals.</p>
-<ul>
-<li>Fast review</li>
-<li>Low APC</li>
-<li>High acceptance</li>
+<div class="flex">
+<img src="https://images.unsplash.com/photo-1552664730-d307ca884978">
+<div>
+<p>We help you publish your research paper in Scopus indexed journals with expert guidance and fast processing.</p>
+<h4>Quick Features:</h4>
+<ul style="text-align:left;">
+<li>✔ Fast review process</li>
+<li>✔ High acceptance rate journals</li>
+<li>✔ Plagiarism support</li>
+<li>✔ Formatting & proofreading</li>
+<li>✔ End-to-end assistance</li>
 </ul>
+<a href="#form" class="btn">Submit Paper</a>
+</div>
+</div>
 </section>
 
-<section id="wos" class="service-detail">
-<h2>Web of Science</h2>
-<img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85">
-<ul>
-<li>Impact factor journals</li>
-<li>Expert support</li>
+<!-- WOS -->
+<section class="section" id="wos">
+<h2>Web of Science Publication</h2>
+<div class="flex">
+<img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f">
+<div>
+<p>Publish your paper in Web of Science indexed journals with expert consultation and journal selection.</p>
+<h4>Quick Features:</h4>
+<ul style="text-align:left;">
+<li>✔ SCI / SCIE journals</li>
+<li>✔ Impact factor journals</li>
+<li>✔ Reviewer support</li>
+<li>✔ Quality improvement</li>
+<li>✔ Fast processing</li>
 </ul>
+<a href="#form" class="btn">Submit Paper</a>
+</div>
+</div>
 </section>
 
-<section id="thesis" class="service-detail">
-<h2>Thesis Support</h2>
-<img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644">
-<ul>
-<li>Writing</li>
-<li>Formatting</li>
+<!-- THESIS -->
+<section class="section" id="thesis">
+<h2>Thesis Writing Support</h2>
+<div class="flex">
+<img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173">
+<div>
+<p>Complete thesis writing support including formatting, editing, and plagiarism correction.</p>
+<h4>Quick Features:</h4>
+<ul style="text-align:left;">
+<li>✔ Complete thesis writing</li>
+<li>✔ Formatting as per university</li>
+<li>✔ Turnitin report</li>
+<li>✔ Proofreading</li>
+<li>✔ Expert consultation</li>
 </ul>
+<a href="#form" class="btn">Submit Paper</a>
+</div>
+</div>
 </section>
 
-<section id="book" class="service-detail">
-<h2>Book Publication</h2>
-<img src="https://images.unsplash.com/photo-1512820790803-83ca734da794">
-<ul>
-<li>ISBN</li>
-<li>Amazon listing</li>
-</ul>
-</section>
+<!-- BLOG -->
+<section class="section" id="blog">
+<h2>Latest Blogs</h2>
 
-<section id="patent" class="service-detail">
-<h2>Patent Filing</h2>
-<img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc">
-<ul>
-<li>Documentation</li>
-<li>Filing support</li>
-</ul>
+<div class="grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40">
+<h4>How to Publish in Scopus Journals</h4>
+<p>Step-by-step guide for beginners.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c">
+<h4>Avoid Plagiarism in Research</h4>
+<p>Best practices to ensure originality.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173">
+<h4>Top Journals for 2026</h4>
+<p>Updated list of indexed journals.</p>
+</div>
+
+</div>
 </section>
 
 <!-- FORM -->
 <section class="section" id="form">
-<h2>Submit Paper</h2>
-<form class="form">
-<input type="text" placeholder="Name">
-<input type="email" placeholder="Email">
-<textarea placeholder="Details"></textarea>
-<button>Submit</button>
+<h2>Submit Your Paper</h2>
+
+<form class="form" action="https://formsubmit.co/edupublishsolutions@gmail.com" method="POST" enctype="multipart/form-data">
+
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="email" name="email" placeholder="Your Email" required>
+<input type="tel" name="phone" placeholder="Phone Number" required>
+
+<select name="journal">
+<option>Scopus</option>
+<option>Web of Science</option>
+<option>SCI</option>
+</select>
+
+<textarea name="message" placeholder="Paper Details"></textarea>
+
+<input type="file" name="file">
+
+<input type="hidden" name="_captcha" value="false">
+
+<button type="submit">Submit Paper</button>
+
 </form>
 </section>
 
 <!-- FOOTER -->
 <footer>
-<p>© 2026 EduPublish Solutions</p>
+<div class="footer-grid">
+
+<div>
+<h3>Quick Links</h3>
+<a href="#about">About</a>
+<a href="#">FAQ</a>
+<a href="#form">Contact</a>
+</div>
+
+<div>
+<h3>Services</h3>
+<a href="#">Publication</a>
+<a href="#">Consultation</a>
+<a href="#">Formatting</a>
+</div>
+
+<div>
+<h3>Contact</h3>
+<p>Email: edupublishsolutions@gmail.com</p>
+<p>Phone: +91 XXXXX XXXXX</p>
+</div>
+
+</div>
+<div class="copy">© 2026 EduPublish Solutions</div>
 </footer>
 
 <!-- WHATSAPP -->
-<a href="https://wa.me/919XXXXXXXXX?text=Hello%20EduPublish%20Solutions" class="whatsapp" target="_blank">
-<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
-</a>
+<a href="https://wa.me/91XXXXXXXXXX" class="whatsapp">💬</a>
 
 </body>
 </html>
