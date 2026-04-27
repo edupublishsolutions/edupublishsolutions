@@ -12,6 +12,20 @@
 html{scroll-behavior:smooth;}
 body{background:#f1f5f9;color:#1e293b;}
 
+/* TOPBAR */
+.topbar{
+background:#7f1d1d;
+color:#fff;
+padding:6px 60px;
+font-size:13px;
+display:flex;
+justify-content:space-between;
+flex-wrap:wrap;
+}
+.topbar span{margin-right:15px;}
+.topbar a{color:#fff;text-decoration:none;}
+.topbar a:hover{text-decoration:underline;}
+
 /* ANNOUNCEMENT */
 .announcement{
 background:#0f172a;color:#fff;
@@ -93,8 +107,6 @@ box-shadow:0 10px 25px rgba(0,0,0,0.05);
 transition:0.3s;
 }
 .card:hover{transform:translateY(-5px);}
-
-/* IMAGE FIX */
 .card img{
 width:100%;
 height:180px;
@@ -103,13 +115,15 @@ border-radius:10px;
 margin-bottom:10px;
 }
 
-/* STATS */
+/* STATS (MAROON) */
 .stats{
-display:flex;justify-content:space-around;
-background:#2563eb;color:#fff;padding:40px;
+display:flex;
+justify-content:space-around;
+background:linear-gradient(135deg,#7f1d1d,#991b1b);
+color:#fff;
+padding:40px;
 flex-wrap:wrap;
 }
-.stats div{margin:10px;}
 
 /* FLEX */
 .flex{display:flex;align-items:center;gap:40px;flex-wrap:wrap;}
@@ -165,11 +179,23 @@ box-shadow:0 10px 20px rgba(0,0,0,0.2);
 .hero img{width:100%;margin-top:20px;}
 nav{padding:15px 20px;}
 .section{padding:50px 20px;}
+.topbar{padding:6px 20px;text-align:center;flex-direction:column;}
 }
 </style>
 </head>
 
 <body>
+
+<!-- TOP CONTACT BAR -->
+<div class="topbar">
+<div>
+<span>📧 edupublishsolutions@gmail.com</span>
+<span>📞 +91 XXXXX XXXXX</span>
+</div>
+<div>
+<span>Mon - Sat: 9AM - 8PM</span>
+</div>
+</div>
 
 <!-- ANNOUNCEMENT -->
 <div class="announcement">
@@ -186,21 +212,11 @@ nav{padding:15px 20px;}
 <div>
 <a href="#">Home</a>
 <a href="#about">About Us</a>
+<a href="#services">Services</a>
 
 <div class="dropdown">
-<a href="#">Services ▾</a>
+<a href="#">More ▾</a>
 <div class="dropdown-content">
-
-<h4>Publication</h4>
-<a href="#">Scopus Publication</a>
-<a href="#">Web of Science</a>
-<a href="#">SCI Journals</a>
-<a href="#">UGC CARE</a>
-
-<h4>Support</h4>
-<a href="#">Thesis Writing</a>
-<a href="#">Formatting</a>
-<a href="#">Plagiarism Check</a>
 
 <h4>Quick Links</h4>
 <a href="#form">Submit Paper</a>
@@ -242,10 +258,94 @@ nav{padding:15px 20px;}
 </div>
 </section>
 
-<!-- CTA -->
-<section class="cta">
-<h2>Ready to Publish Your Paper?</h2>
-<a href="#form" class="btn">Submit Now</a>
+<!-- SERVICES -->
+<section class="section" id="services">
+<h2>Our Services</h2>
+
+<div class="grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40">
+<h4>Scopus Publication</h4>
+<p>Fast-track publication in Scopus indexed journals.</p>
+<a href="#scopus" class="btn">Read More</a>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952">
+<h4>Web of Science</h4>
+<p>Get published in high-impact WoS journals.</p>
+<a href="#wos" class="btn">Read More</a>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1521791136064-7986c2920216">
+<h4>Thesis Support</h4>
+<p>Complete thesis writing & formatting support.</p>
+<a href="#thesis" class="btn">Read More</a>
+</div>
+
+</div>
+</section>
+
+<!-- SCOPUS -->
+<section class="section" id="scopus">
+<h2>Scopus Publication</h2>
+<div class="flex">
+<img src="https://images.unsplash.com/photo-1552664730-d307ca884978">
+<div>
+<p>We help you publish your research paper in Scopus indexed journals with expert guidance and fast processing.</p>
+<h4>Quick Features:</h4>
+<ul style="text-align:left;">
+<li>✔ Fast review process</li>
+<li>✔ High acceptance rate journals</li>
+<li>✔ Plagiarism support</li>
+<li>✔ Formatting & proofreading</li>
+<li>✔ End-to-end assistance</li>
+</ul>
+<a href="#form" class="btn">Submit Paper</a>
+</div>
+</div>
+</section>
+
+<!-- WOS -->
+<section class="section" id="wos">
+<h2>Web of Science Publication</h2>
+<div class="flex">
+<img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f">
+<div>
+<p>Publish your paper in Web of Science indexed journals with expert consultation and journal selection.</p>
+<h4>Quick Features:</h4>
+<ul style="text-align:left;">
+<li>✔ SCI / SCIE journals</li>
+<li>✔ Impact factor journals</li>
+<li>✔ Reviewer support</li>
+<li>✔ Quality improvement</li>
+<li>✔ Fast processing</li>
+</ul>
+<a href="#form" class="btn">Submit Paper</a>
+</div>
+</div>
+</section>
+
+<!-- THESIS -->
+<section class="section" id="thesis">
+<h2>Thesis Writing Support</h2>
+<div class="flex">
+<img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173">
+<div>
+<p>Complete thesis writing support including formatting, editing, and plagiarism correction.</p>
+<h4>Quick Features:</h4>
+<ul style="text-align:left;">
+<li>✔ Complete thesis writing</li>
+<li>✔ Formatting as per university</li>
+<li>✔ Turnitin report</li>
+<li>✔ Proofreading</li>
+<li>✔ Expert consultation</li>
+</ul>
+<a href="#form" class="btn">Submit Paper</a>
+</div>
+</div>
 </section>
 
 <!-- BLOG -->
