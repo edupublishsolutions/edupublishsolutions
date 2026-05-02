@@ -588,100 +588,58 @@ nav{padding:15px 20px;}
 </div>
 </section>
   
-<!-- ===== SUBMIT PAPER ===== -->
-<section class="form-section gradient-1">
-  <div class="form-container">
+<!-- ===== SUBMIT PAPER FORM ===== -->
+<section class="section colorful-bg" id="form">
 
-    <div class="form-info">
-      <h2>🚀 Publish Your Research</h2>
-      <p>Submit your paper and get fast-track publication support.</p>
+  <div class="form-wrapper">
+    <h2>🚀 Submit Your Paper</h2>
 
-      <ul>
-        <li>✔ Fast Review</li>
-        <li>✔ Scopus / UGC Support</li>
-        <li>✔ 24/7 Assistance</li>
-      </ul>
-    </div>
+    <form class="form"
+          action="https://formsubmit.co/edupublishsolutions@gmail.com"
+          method="POST"
+          enctype="multipart/form-data">
 
-    <div class="form-box">
-      <h3>Submit Paper</h3>
+      <div class="input-group">
+        <input type="text" name="name" required>
+        <label>Your Name</label>
+      </div>
 
-      <form action="https://formsubmit.co/edupublishsolutions@gmail.com"
-            method="POST"
-            enctype="multipart/form-data">
+      <div class="input-group">
+        <input type="email" name="email" required>
+        <label>Your Email</label>
+      </div>
 
-        <div class="input-group">
-          <input type="text" name="name" required>
-          <label>Full Name</label>
-        </div>
+      <div class="input-group">
+        <input type="tel" name="phone" required>
+        <label>Phone Number</label>
+      </div>
 
-        <div class="input-group">
-          <input type="email" name="email" required>
-          <label>Email Address</label>
-        </div>
+      <div class="input-group">
+        <select name="journal" required>
+          <option value="" disabled selected></option>
+          <option>Scopus</option>
+          <option>Web of Science</option>
+          <option>SCI</option>
+        </select>
+        <label>Select Journal</label>
+      </div>
 
-        <div class="input-group file-input">
-          <input type="file" name="attachment" required>
-        </div>
+      <div class="input-group">
+        <textarea name="message" required></textarea>
+        <label>Paper Details</label>
+      </div>
 
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_subject" value="New Paper Submission">
+      <div class="input-group file-input">
+        <input type="file" name="file">
+      </div>
 
-        <button type="submit">Submit Paper</button>
-      </form>
-    </div>
+      <input type="hidden" name="_captcha" value="false">
 
+      <button type="submit">Submit Paper</button>
+
+    </form>
   </div>
-</section>
 
-
-<!-- ===== CONTACT US ===== -->
-<section class="form-section gradient-2">
-  <div class="form-container">
-
-    <div class="form-info">
-      <h2>💬 Contact Us</h2>
-      <p>We’re here to guide you at every step of publication.</p>
-
-      <ul>
-        <li>✔ Quick Response</li>
-        <li>✔ Expert Support</li>
-        <li>✔ Author Guidance</li>
-      </ul>
-    </div>
-
-    <div class="form-box">
-      <h3>Send Message</h3>
-
-      <form action="https://formsubmit.co/edupublishsolutions@gmail.com" method="POST">
-
-        <input type="hidden" name="_captcha" value="false">
-
-        <div class="input-group">
-          <input type="text" name="name" required>
-          <label>Your Name</label>
-        </div>
-
-        <div class="input-group">
-          <input type="email" name="email" required>
-          <label>Your Email</label>
-        </div>
-
-        <div class="input-group">
-          <input type="text" name="phone" required>
-          <label>Contact Number</label>
-        </div>
-
-        <div class="input-group">
-          <textarea name="message" required></textarea>
-          <label>Your Message</label>
-        </div>
-
-        <button type="submit">Send Message</button>
-      </form>
-    </div>
-
-  </div>
 </section>
   
 <!-- FONT AWESOME (REQUIRED FOR ICONS) -->
