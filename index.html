@@ -584,35 +584,54 @@ nav{padding:15px 20px;}
 
 </div>
 </section>
+    
+<!-- Submit Paper Section -->
+<section id="submit-paper" class="submit-section">
+  <div class="container">
 
-<!-- FORM -->
-<section class="section" id="form">
-<h2>Submit Your Paper</h2>
+    <h2 class="section-title">Submit Paper</h2>
 
-<form class="form" action="https://formsubmit.co/edupublishsolutions@gmail.com" method="POST" enctype="multipart/form-data">
+    <div class="submit-box">
 
-<input type="text" name="name" placeholder="Your Name" required>
-<input type="email" name="email" placeholder="Your Email" required>
-<input type="tel" name="phone" placeholder="Phone Number" required>
+      <form action="https://formsubmit.co/edupublishsolutions@gmail.com"
+            method="POST"
+            enctype="multipart/form-data">
 
-<select name="journal">
-<option>Scopus</option>
-<option>Web of Science</option>
-<option>SCI</option>
-</select>
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="email" name="email" placeholder="Email" required>
 
-<textarea name="message" placeholder="Paper Details"></textarea>
+        <input type="file" name="attachment" 
+               accept=".pdf,.doc,.docx" required>
 
-<input type="file" name="file">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_subject" value="New Paper Submission">
 
-<input type="hidden" name="_captcha" value="false">
+        <button type="submit" class="submit-btn">Submit</button>
 
-<button type="submit">Submit Paper</button>
+      </form>
 
-</form>
+    </div>
+  </div>
 </section>
 
+<section id="contact">
+<h2 class="section-title">Contact Us</h2>
+
+<form action="https://formsubmit.co/edupublishsolutions@gmail.com" method="POST">
+<input type="hidden" name="_captcha" value="false">
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="email" name="email" placeholder="Your Email" required>
+<input type="text" name="phone" placeholder="Contact Number" required>
+<textarea name="message" placeholder="Your Message" required></textarea>
+<button type="submit">Submit</button>
+</form>
+
+</section>
   
+<!-- FONT AWESOME (REQUIRED FOR ICONS) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
 <!-- Footer -->
 <footer class="footer">
   <div class="container">
@@ -625,7 +644,7 @@ nav{padding:15px 20px;}
         Professional publication support services for researchers worldwide.
       </p>
 
-      <!-- Navigation Links (Only Here) -->
+      <!-- Navigation Links -->
       <div class="footer-links">
         <a href="#home">Home</a>
         <a href="#about">About</a>
@@ -641,12 +660,20 @@ nav{padding:15px 20px;}
         Phone / WhatsApp: +91 7011991600
       </p>
 
-      <!-- Social Links -->
+      <!-- Social Media Icons -->
       <div class="social-links">
-        <a href="https://www.linkedin.com/in/edupublish-solutions-0653433b1/" target="_blank">LinkedIn</a>
-        <a href="https://www.instagram.com/edupublishsolutions/" target="_blank">Instagram</a>
-        <a href="https://www.facebook.com/" target="_blank">Facebook</a>
-        <a href="https://wa.me/917011991600" target="_blank">WhatsApp</a>
+        <a href="https://www.linkedin.com/in/edupublish-solutions-0653433b1/" target="_blank">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://www.instagram.com/edupublishsolutions/" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com/" target="_blank">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://wa.me/917011991600" target="_blank">
+          <i class="fab fa-whatsapp"></i>
+        </a>
       </div>
 
       <!-- Map -->
@@ -657,7 +684,7 @@ nav{padding:15px 20px;}
         </iframe>
       </div>
 
-      <!-- MSME Section -->
+      <!-- MSME -->
       <div class="msme-section">
         <img src="msme2.png" alt="MSME Registered" class="msme-logo">
         <p class="msme-text">MSME Registered Organization</p>
@@ -665,6 +692,7 @@ nav{padding:15px 20px;}
 
     </div>
 
+    <!-- Bottom -->
     <div class="footer-bottom">
       <p>© 2026 EduPublish Solutions. All Rights Reserved.</p>
     </div>
