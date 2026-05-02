@@ -584,31 +584,28 @@ nav{padding:15px 20px;}
 
 </div>
 </section>
-    <!-- Submit Paper Section -->
-<section id="submit-paper" class="submit-section">
+
+  
+<!-- Submit Paper Section -->
+<section id="submit-paper">
   <div class="container">
 
     <h2 class="section-title">Submit Your Paper</h2>
 
-    <div class="form-card">
+    <div class="submit-box">
       <form action="https://formsubmit.co/edupublishsolutions@gmail.com"
             method="POST"
             enctype="multipart/form-data">
 
-        <div class="form-group">
-          <input type="text" name="name" placeholder="Full Name" required>
-          <input type="email" name="email" placeholder="Email Address" required>
-        </div>
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email Address" required>
 
-        <div class="form-group">
-          <input type="file" name="attachment" accept=".pdf,.doc,.docx" required>
-        </div>
+        <input type="file" name="attachment" accept=".pdf,.doc,.docx" required>
 
         <input type="hidden" name="_captcha" value="false">
         <input type="hidden" name="_subject" value="New Paper Submission">
 
-        <button type="submit" class="btn">Submit Paper</button>
-
+        <button type="submit" class="submit-btn">Submit Paper</button>
       </form>
     </div>
 
@@ -617,31 +614,23 @@ nav{padding:15px 20px;}
 
 
 <!-- Contact Section -->
-<section id="contact" class="contact-section">
+<section id="contact">
   <div class="container">
 
     <h2 class="section-title">Contact Us</h2>
 
-    <div class="form-card">
+    <div class="submit-box">
       <form action="https://formsubmit.co/edupublishsolutions@gmail.com" method="POST">
 
         <input type="hidden" name="_captcha" value="false">
 
-        <div class="form-group">
-          <input type="text" name="name" placeholder="Your Name" required>
-          <input type="email" name="email" placeholder="Your Email" required>
-        </div>
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="text" name="phone" placeholder="Contact Number" required>
 
-        <div class="form-group">
-          <input type="text" name="phone" placeholder="Contact Number" required>
-        </div>
+        <textarea name="message" placeholder="Your Message" required></textarea>
 
-        <div class="form-group">
-          <textarea name="message" placeholder="Your Message" required></textarea>
-        </div>
-
-        <button type="submit" class="btn">Send Message</button>
-
+        <button type="submit" class="submit-btn">Send Message</button>
       </form>
     </div>
 
